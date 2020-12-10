@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "classmap": [
+      "app",
+      "admin"
+    ]
+  },
+  "require": {
+    "doctrine/inflector": "1.0",
+    "a5hleyrich/wp-background-processing": "^1.0"
+  }
+}

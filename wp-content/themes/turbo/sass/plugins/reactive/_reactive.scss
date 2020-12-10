@@ -1,0 +1,33 @@
+@import 'default-listings';
+@import 'airbnb-filter-blocks';
+@import 'airbnb-listings';
+@import './airbnb-listing-map';
+
+// fixing reactive admin ui elements 
+.page {
+	.reactiveToggleBtnsWrapper___ {
+		left: 0;
+	}
+	.reactiveUserView .reactiveDocWrapper .reactiveDocCloseBtn,
+	.reactiveUserView .reactiveDocWrapper .reactiveDocMapCloseBtn {
+		z-index: -1;
+	}
+}
+
+.reactiveModalOverlay___ {
+  .reuseFormWrapper___ {
+    .reuseSelectedBoxWrapper___ .reuseSelectBtn___,
+    input[type="email"].reuseInputField___,
+    input[type="password"].reuseInputField___,
+    input[type="text"].reuseInputField___,
+    .reuseMinMaxInput___ input {
+      min-height: auto;
+    }
+  }
+  div[class*="reactiveModalBtnsWrapper___"] {
+    z-index: 1;
+    button {
+      min-height: auto;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "redqteam/turbo-helper",
+  "description": "Helper plugin for turbo theme",
+  "type": "wordpress-plugin",
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "redqteam",
+      "email": "support.readteam@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "classmap": [
+      "app"
+    ],
+    "files": [
+      "app/functions.php"
+    ]
+  }
+}

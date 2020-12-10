@@ -1,0 +1,325 @@
+.updated:not(.published) {
+	display: none;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.sticky {
+	display: block;
+}
+
+.rq-arrow-left,
+.rq-arrow-right,
+.rq-chevron-down {
+	width: 20px;
+	height: 20px;
+}
+
+.hidden-md {
+	display: block;
+	&.turbo-mini-cart {
+		right: 64px;
+		> .cart-counter {
+			padding: 4px 12px;
+		}
+	}
+	@media (min-width: 992px) {
+		display: none;
+	}
+}
+
+.rq-mt-0 {
+	margin-top: 0;
+}
+
+.rq-dot {
+	color: var(--color__primary, #{$color__primary});
+}
+
+.with-border-bottom {
+	border-bottom: 1px solid $color__border;
+}
+
+.container {
+  .container {
+    padding-left: 0;
+    margin-right: 0;
+  }
+}
+
+/*------------------------------------------------------
+// Content block
+------------------------------------------------------*/
+.rq-content-block {
+	padding: 72px 0;
+	@media (max-width: 1024px) {
+		padding: 64px 0;
+	}
+	@media (max-width: 991px) {
+		padding: 56px 0;
+	}
+	&.gray-bg {
+		background-color: $color__background-light;
+	}
+	&.no-padding {
+		padding: 0;
+		.rq-browse-section {
+			.rq-title {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+/*------------------------------------------------------
+// Container fluid
+------------------------------------------------------*/
+.turbo-container-fluid {
+	padding-left: 75px;
+	padding-right: 75px;
+	@media (max-width: 1460px) {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	@media (max-width: 767px) {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+}
+
+/*------------------------------------------------------
+// Title container
+------------------------------------------------------*/
+.rq-title-container {
+	margin-bottom: 48px;
+	@media (max-width: 991px) {
+		margin-bottom: 40px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.partners-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+	.partner-single {
+		margin: 8px;
+		a {
+			display: block;
+		}
+		@media (max-width: 767px) {
+			img {
+				max-width: 80%;
+			}
+		}
+	}
+}
+
+/*------------------------------------------------------
+// Fancy Title
+------------------------------------------------------*/
+.rq-listing-fancy-title-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 16px;
+	h2.rq-title {
+		padding: 0;
+		margin: 0;
+		font-size: 26px;
+		line-height: 30px;
+		@media (max-width: 480px) {
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+	.show-more-btn-area {
+		flex-shrink: 0;
+		a.rq-btn-o {
+			color: var(--color__text-light, #{$color__text-light});
+			text-transform: capitalize;
+			text-decoration: none;
+			transition: color 0.2s ease;
+			&:hover,
+			&:focus {
+				text-decoration: underline;
+				color: var(--color__link-hover, #{$color__link-hover});
+			}
+		}
+	}
+}
+
+/*------------------------------------------------------
+// block header style
+------------------------------------------------------*/
+.heading-layout-one {
+	.rq-browse-section {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 48px;
+		.rq-title {
+			margin: 0;
+			@media (max-width: 991px) {
+				font-size: $h3__font-size + 2px;
+			}
+			@media (max-width: 767px) {
+				font-size: var(--h3__font-size, #{$h3__font-size});
+			}
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.heading-layout-two {
+	padding-top: 64px;
+	@media (max-width: 991px) {
+		padding-top: 56px;
+		margin-bottom: -16px;
+	}
+	.rq-browse-section {
+		text-align: center;
+		.rq-title {
+			font-size: var(--h2__font-size, #{$h2__font-size});
+			margin: 0;
+			@media (max-width: 991px) {
+				font-size: calc(var(--h2__font-size, #{$h2__font-size}) - 2px);
+			}
+			@media (max-width: 767px) {
+				font-size: calc(var(--h2__font-size, #{$h2__font-size}) - 4px);
+			}
+		}
+	}
+}
+
+/*------------------------------------------------------
+* about page style
+------------------------------------------------------*/
+.about-us-content-single {
+	.about-us-text {
+		line-height: 1.75;
+	}
+
+	.contact-single {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 16px;
+		i {
+			color: var(--color__text-light, #{$color__text-light});
+			width: 25px;
+			margin-top: 4px;
+		}
+		p {
+			margin: 0;
+		}
+	}
+	.opening-hour {
+		font-weight: 600;
+		span {
+			margin-left: 16px;
+		}
+	}
+
+	.rq-team-members {
+		.member-single {
+			border-radius: 4px;
+			margin-bottom: 30px;
+			border: 1px solid $color__border;
+			overflow: hidden;
+			.member-avatar {
+				img {
+					width: 100%;
+					height: auto;
+					object-fit: cover;
+				}
+			}
+			.member-info {
+				text-align: center;
+				padding: 14px 8px 20px;
+				a {
+					font-weight: 700;
+					text-decoration: none;
+				}
+				p {
+					color: var(--color__text-light, #{$color__text-light});
+					margin: 4px 0 10px;
+				}
+				ul {
+					margin: 0;
+					padding: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					li {
+						margin: 0 10px;
+						list-style: none;
+						font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+					}
+				}
+			}
+		}
+	}
+}
+
+/*------------------------------------------------------
+* contact us page style
+------------------------------------------------------*/
+.rq-contact-us-grid-block {
+	.grid-block-single {
+		text-align: center;
+		padding: 32px 24px;
+		border-radius: 4px;
+		border: 1px solid $color__border;
+		margin-bottom: 24px;
+		i {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 64px;
+			height: 64px;
+			background-color: $color__background-light;
+			border-radius: 50%;
+			font-size: 22px;
+		}
+		h3 {
+			margin-bottom: 18px;
+		}
+		p {
+			margin-top: 12px;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.rq-contact-us-form-content {
+	text-align: center;
+	max-width: 760px;
+	margin: 0 auto;
+
+	h3 {
+		margin-bottom: 32px;
+	}
+
+	.wpcf7-form-control-wrap {
+		display: block;
+	}
+
+	input[type='submit'] {
+		text-transform: uppercase;
+	}
+}
+
+.rq-contact-us-map {
+	margin-top: 48px;
+	#map {
+		height: 380px;
+	}
+}

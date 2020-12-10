@@ -1,0 +1,36 @@
+@import './footer-widgets';
+@import './footer-copyright';
+
+footer {
+	&.rq-footer {
+		display: flex;
+		flex-direction: column;
+	}
+	&.rq-listing-footer {
+		padding-top: 48px;
+		padding-bottom: 82px;
+		a {
+			text-decoration: none;
+		}
+		.turbo-footer-listing-logo-area {
+			.turbo-listing-footer-logo {
+				text-align: center;
+				margin-bottom: 48px;
+			}
+		}
+		.listing-footer-nav {
+			margin: 0;
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			justify-content: center;
+			li {
+				margin: 0;
+				a {
+					display: inline-block;
+					padding: 6px 24px;
+				}
+			}
+		}
+	}
+}

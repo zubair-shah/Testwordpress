@@ -1,0 +1,116 @@
+.rq-single-content-block {
+	min-height: auto;
+	padding-bottom: 140px;
+	@media (max-width: 991px) {
+		padding-bottom: 50px;
+	}
+	@media (max-width: 767px) {
+		padding-bottom: 45px;
+	}
+	.container {
+		.row {
+			@media (min-width: 992px) {
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+		}
+	}
+	.col-lg-6 {
+		@media (max-width: 991px) {
+			width: 50%;
+			float: left;
+		}
+		@media (max-width: 767px) {
+			width: 100%;
+			float: inherit;
+		}
+	}
+	.single-cb-image {
+		position: relative;
+		img {
+			border-radius: 7px;
+			box-shadow: 0px 20px 95px 0px rgba(36, 57, 108, 0.25);
+			overflow: hidden;
+			&:nth-child(2) {
+				max-width: 325px;
+				height: auto;
+				position: absolute;
+				right: -81px;
+				bottom: calc(-259px / 3.5);
+				@media (max-width: 767px) {
+					right: -10px;
+					transform: scale(0.9);
+				}
+			}
+		}
+	}
+	.single-cb-content {
+		@media (max-width: 480px) {
+			padding: 100px 0 0;
+		}
+		h5 {
+			color: var(--heading__color, #{$color__heading-color});
+			margin-top: 0;
+			margin-bottom: 24px;
+			text-transform: capitalize;
+			font-size: var(--h2__font-size, #{$h2__font-size});
+			@media (max-width: 991px) {
+				font-size: calc(var(--h2__font-size, #{$h2__font-size}) - 2px);
+			}
+			@media (max-width: 767px) {
+				font-size: calc(var(--h2__font-size, #{$h2__font-size}) - 4px);
+			}
+		}
+		.entry-content {
+			color: var(--color__text-light, #{$color__text-light});
+			font-size: var(--base__font-size, #{$base__font-size});
+			line-height: 1.75;
+			font-weight: 400;
+		}
+		.button-section {
+			margin-top: 48px;
+			@media (max-width: 767px) {
+				margin-top: 40px;
+			}
+		}
+	}
+	&.single-cb-layout-one {
+		.single-cb-content {
+			padding-left: 124px;
+			@media (max-width: 1024px) {
+				padding-left: 100px;
+			}
+			@media (max-width: 767px) {
+				padding-left: 0;
+				padding-top: 100px;
+			}
+		}
+	}
+	&.single-cb-layout-two {
+		padding-bottom: 140px;
+		@media (max-width: 991px) {
+			padding-bottom: 72px;
+		}
+		@media (max-width: 767px) {
+			padding-bottom: 120px;
+		}
+		.single-cb-content {
+			padding: 0 130px 0 0;
+			@media (max-width: 767px) {
+				padding: 0 0 56px;
+			}
+		}
+		.single-cb-image {
+			img {
+				&:nth-child(2) {
+					left: -81px;
+					@media (max-width: 767px) {
+						left: 0;
+						transform: scale(0.9);
+					}
+				}
+			}
+		}
+	}
+}

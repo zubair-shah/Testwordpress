@@ -1,0 +1,89 @@
+.rq-mission-block-wrapper {
+	position: relative;
+	.bg-large-text {
+		position: absolute;
+		left: -68px;
+		font-size: 300px;
+		letter-spacing: 150px;
+		text-transform: uppercase;
+		font-weight: 600;
+		opacity: 0.3;
+	}
+
+	.rq-mission-block {
+		background-color: $color__white;
+		box-shadow: 0 24px 34px -14px rgba(0, 0, 0, 0.3);
+		.mission-image {
+			@media (max-width: 420px) {
+				height: 284px !important;
+				img {
+					top: 48px !important;
+				}
+			}
+		}
+		.mission-content {
+			padding: 64px 0;
+			@media (max-width: 991px) {
+				padding: 40px 0;
+			}
+			@media (max-width: 767px) {
+				padding: 28px 0 16px;
+			}
+			.rq-title {
+				margin: 0;
+				position: relative;
+				padding-bottom: 45px;
+				padding-left: 55px;
+				@media (max-width: 991px) {
+					font-size: $h3__font-size + 2px;
+					padding-bottom: 32px;
+					padding-left: 32px;
+				}
+				@media (max-width: 767px) {
+					font-size: var(--h3__font-size, #{$h3__font-size});
+					padding-left: 26px;
+					padding-bottom: 24px;
+				}
+			}
+			.rq-line {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 150px;
+				display: block;
+				height: 1px;
+				background-color: $color__black;
+			}
+			.mission-text {
+				padding: 60px 0 60px 55px;
+				@media (max-width: 991px) {
+					padding: 40px 0 48px 32px;
+				}
+				@media (max-width: 767px) {
+					padding: 28px 32px 28px;
+				}
+				line-height: 1.75;
+				margin: 0;
+			}
+			address {
+				font-style: normal;
+				padding-left: 55px;
+				margin-bottom: 0;
+				@media (max-width: 991px) {
+					padding-left: 32px;
+				}
+				@media (max-width: 767px) {
+					padding-left: 28px;
+				}
+				a {
+					font-weight: 600;
+					text-decoration: none;
+				}
+				cite {
+					font-style: normal;
+					color: var(--color__text-light, #{$color__text-light});
+				}
+			}
+		}
+	}
+}

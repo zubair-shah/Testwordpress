@@ -1,0 +1,46 @@
+@import 'default-nav';
+@import 'listing-nav';
+@import 'transparent-nav';
+
+// for sticky header
+.header {
+	#sticker {
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+	}
+}
+
+// for admin
+.admin-bar {
+	.header {
+		#sticker {
+			top: 32px;
+			@media (max-width: 782px) {
+				top: 46px;
+			}
+		}
+  }
+  @media (max-width: 600px) {
+    &.sticky-header {
+      .header {
+        #sticker {
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+// fixing home page banner for transparent sticky header
+.transparent-header.sticky-header {
+	+ div {
+		.header {
+			.header-body {
+				padding-top: 100px;
+			}
+		}
+	}
+}

@@ -1,0 +1,545 @@
+.react-grid-layout,
+.viewSearchBlock {
+	// Turbo listing page new sidebar
+	.turbo-grid-sidebar,
+	.turbo-grid-newSidebar,
+	.reactiveDocWrapper {
+		h3.reactiveBlockTitle___ {
+			color: var(--heading__color, #{$color__heading-color});
+			font-size: calc(var(--base__font-size, #{$base__font-size}) + 4px);
+			font-weight: 600;
+			text-transform: capitalize;
+			line-height: 30px;
+		}
+
+		// Reactive search widget design
+		.reactiveNormSearchGridContents___ {
+			padding: 36px 0 0;
+
+			.reactiveSElParentcheckbox___ {
+				overflow: hidden;
+			}
+
+			.reuseElementBlock___ {
+				// widget title design
+				.reuseLabelsWrapper___ {
+					margin-bottom: 20px;
+
+					h3.reuseLabel___ {
+						color: var(--heading__color, #{$color__heading-color});
+						font-size: var(--base__font-size, #{$base__font-size});
+						font-weight: 500;
+						text-transform: capitalize;
+						line-height: 26px;
+					}
+				}
+
+				// input field design
+				input,
+				input[type='text'],
+				input[type='email'],
+				input[type='password'],
+				input.reuseInputField___ {
+					border-radius: 5px;
+					border: 1px solid $color__border;
+					min-height: 55px;
+					color: var(--heading__color, #{$color__heading-color});
+					font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+					font-weight: 400;
+
+					&:hover,
+					&:focus {
+						border: 1px solid $color__border-focus !important;
+					}
+
+					button.reuseClearBtn___ {
+						width: 38px;
+						min-height: 55px;
+					}
+
+					&::-webkit-input-placeholder,
+					&:-ms-input-placeholder,
+					&::-ms-input-placeholder,
+					&::placeholder {
+						color: var(--color__text-light, #{$color__text-light});
+						font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+						font-weight: 400;
+					}
+				}
+
+				// reuse elements design
+				div {
+					// input clear button
+					button.reuseClearBtn___ {
+						height: 50px;
+					}
+
+					// checkbox design
+					&.reuseCheckboxWrapper___ {
+						margin-top: 20px;
+
+						&:first-of-type {
+							margin-top: 0;
+						}
+					}
+
+					label {
+						> span {
+							color: $color__text-main;
+							transition: color 0.2s ease;
+						}
+						&:hover {
+							> span {
+								color: var(--heading__color, #{$color__heading-color});
+							}
+						}
+					}
+
+					input[type='checkbox'],
+					input.reuseCheckbox___,
+					input.reuseComboCheckbox___ {
+						& + label {
+							&:before {
+								border-radius: 2px;
+								border: 2px solid $color__border-focus;
+							}
+
+							&:after {
+								font-size: calc(var(--base__font-size, #{$base__font-size}) - 5px);
+							}
+						}
+					}
+
+					// combobox design
+					&.reuseCheckboxScrollWrapper___ {
+						.reuseCheckboxSearch___ {
+							margin-bottom: 20px;
+							background-color: $color__white;
+
+							&:before {
+								left: 15px;
+								height: 50px;
+								color: var(--color__text-light, #{$color__text-light});
+								line-height: 50px;
+							}
+
+							input {
+								padding-left: 38px;
+								padding-right: 15px;
+							}
+						}
+
+						.reuseCheckboxParrentWrapper___ {
+							border: 0;
+							box-shadow: none;
+							padding: 0;
+						}
+					}
+
+					// reuse radio button design
+					&.reuseRadioButtonWrapper___ {
+						margin-top: 20px;
+
+						&:first-of-type,
+						.reuseRadioButtonField___ {
+							margin-top: 0;
+						}
+
+						input[type='radio'] {
+							& + label {
+								&:before {
+									border: 2px solid $color__border-focus !important;
+								}
+							}
+						}
+					}
+
+					// moreless button design
+					.reuseMoreLessBtnWrapper___ {
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+						button {
+							&.reuseShowLessBtn___,
+							&.reuseShowMoreBtn___ {
+								width: auto;
+								height: auto;
+								line-height: auto;
+								margin-top: 20px;
+								background-color: transparent;
+								border-radius: 0;
+								box-shadow: none;
+								outline: 0;
+								border: 0;
+								color: var(--color__text-light, #{$color__text-light});
+								font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+								font-weight: 400;
+								text-transform: lowercase;
+								padding: 0;
+								margin-right: 20px;
+								justify-content: flex-start;
+								transition: color 0.3s ease-out;
+								&::after {
+									content: '+';
+									padding-left: 5px;
+								}
+								&:hover {
+									color: var(--heading__color, #{$color__heading-color});
+								}
+							}
+							&.reuseShowLessBtn___ {
+								&::after {
+									content: '-';
+								}
+							}
+						}
+					}
+				}
+
+				// mapautocomplete design
+				.reuseMapAutoCompleteWrapper___ {
+					&:before {
+						color: var(--color__text-light, #{$color__text-light});
+						font-size: calc(var(--base__font-size, #{$base__font-size}) + 4px);
+						line-height: 50px;
+						left: 15px;
+					}
+				}
+
+				// select box design
+				.dd__wrapper {
+					.dd__selectControl {
+						border-radius: 5px !important;
+						border: 1px solid $color__border;
+						min-height: 55px;
+
+						.dd__selected {
+							.dd__placeholder {
+								color: var(--color__text-light, #{$color__text-light});
+								font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+								font-weight: 400;
+							}
+
+							.dd__selectedItem {
+								div {
+									color: var(--heading__color, #{$color__heading-color});
+									font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+									font-weight: 400;
+								}
+							}
+						}
+					}
+
+					.dd__list {
+						border: 1px solid $color__border;
+						box-shadow: none;
+
+						.dd__option {
+							color: var(--heading__color, #{$color__heading-color});
+							font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+							font-weight: 400;
+						}
+					}
+				}
+
+				// range box design
+				.reuseNoUiSliderWrapper___ {
+					width: calc(100% - 15px);
+					margin-left: 12px;
+
+					.noUi-horizontal {
+						.noUi-base {
+							background-color: $color__border;
+
+							.noUi-origin {
+								&:last-child {
+									background-color: $color__border;
+								}
+
+								.noUi-handle {
+									width: 15px;
+									height: 20px;
+									top: -10px;
+									border-radius: 5px;
+									border: 0;
+
+									.noUi-tooltip {
+										border: 0;
+										color: var(--heading__color, #{$color__heading-color});
+										font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+										font-weight: 400;
+									}
+								}
+							}
+						}
+					}
+
+					p.reuseSliderValue___ {
+						color: var(--heading__color, #{$color__heading-color});
+						font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+						font-weight: 400;
+					}
+				}
+			}
+
+			// filter & reset button design
+			.reuseSingleElement___ {
+				div {
+					button {
+						&.reuseButton___ {
+							font-weight: 500;
+							font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+							height: 50px;
+							line-height: 50px;
+							min-width: 180px;
+							color: $color__white;
+							background-color: var(--color__primary, #{$color__primary});
+							transition: background-color 0.2s ease;
+							&:hover,
+							&:focus {
+								outline: 0;
+								box-shadow: none;
+								border: 0;
+								background-color: var(
+									--color__primary-hover,
+									#{$color__primary-hover}
+								);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Reactive bar component
+	.reactiveBarComponentWrapper___ {
+		.reactiveBarContents___ {
+			.reuseFormWrapper___ {
+				.reuseSingleElement___ {
+					// label design
+					h4.reuseLabel___ {
+						color: var(--heading__color, #{$color__heading-color});
+						font-size: var(--base__font-size, #{$base__font-size});
+						font-weight: 500;
+						text-transform: capitalize;
+
+						line-height: 26px;
+					}
+
+					// select box design
+					.dd__wrapper {
+						.dd__selectControl {
+							border-radius: 5px !important;
+							border: 1px solid $color__border;
+							min-height: 55px;
+
+							.dd__selected {
+								.dd__placeholder {
+									color: var(--color__text-light, #{$color__text-light});
+									font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+
+									font-weight: 400;
+								}
+
+								.dd__selectedItem {
+									div {
+										color: var(--heading__color, #{$color__heading-color});
+										font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+
+										font-weight: 400;
+									}
+								}
+							}
+						}
+
+						.dd__expandIcon {
+							color: var(--color__text-light, #{$color__text-light});
+						}
+
+						.dd__list {
+							border: 1px solid $color__border;
+							box-shadow: none;
+
+							.dd__option {
+								color: var(--heading__color, #{$color__heading-color});
+								font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+
+								font-weight: 400;
+							}
+						}
+					}
+
+					// shorting button
+					.reuseSortingIcon___ {
+						height: 50px;
+						border: 0;
+
+						&:before {
+							font-family: 'Ionicons';
+							font-size: calc(var(--base__font-size, #{$base__font-size}) + 4px);
+						}
+
+						i {
+							display: none;
+						}
+					}
+
+					div.reuseSortingIcon___[title='Ascending'] {
+						&:before {
+							content: '\f366';
+						}
+					}
+
+					div.reuseSortingIcon___[title='Descending'] {
+						&:before {
+							content: '\f35d';
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// listing page design
+	#ReactiveShowGrid {
+		.rq-car-listing-wrapper {
+			.rq-listing-choose {
+				> .row {
+					display: flex;
+					flex-wrap: wrap;
+					@media (max-width: 767px) {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+.react-grid-layout.admin__ .turbo-grid-sidebar .reactiveNormSearchGridContents___, 
+.react-grid-layout.admin__ .turbo-grid-newSidebar .reactiveNormSearchGridContents___, 
+.react-grid-layout.admin__ .reactiveDocWrapper .reactiveNormSearchGridContents___ {
+  padding-top: 0;
+}
+
+// search block for mobile
+.reactiveUserView {
+	.reactiveDocWrapper {
+		padding: 0;
+		background-color: $color__white;
+
+		.reactiveNormSearchGridContents___ {
+			padding: 0 20px 30px;
+
+			.DateRangePicker {
+				width: 100%;
+			}
+
+			.DateRangePicker__picker--horizontal {
+				border-radius: 5px;
+				margin-left: 4px;
+				.DayPicker.DayPicker--horizontal {
+					max-width: 320px;
+					border-radius: 5px;
+					overflow: hidden;
+				}
+			}
+		}
+	}
+}
+
+.rq-listing-page {
+	.reactiveBarFrontendView___ {
+		&.hasBorder___ {
+			padding: 0;
+			border: 0;
+		}
+		.rc-pagination {
+			a {
+				color: var(--heading__color, #{$color__heading-color});
+				font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+				font-weight: 400;
+				transition: border-color 0.2s ease;
+			}
+			.rc-pagination-prev,
+			.rc-pagination-next {
+				margin: 0;
+				border: 0;
+			}
+			.rc-pagination-item {
+				border-radius: 50%;
+				&:hover {
+					color: var(--color__primary, #{$color__primary});
+					border-color: var(--color__primary, #{$color__primary});
+					a {
+						color: inherit;
+					}
+				}
+			}
+			.rc-pagination-item-active {
+				color: $color__white;
+				border-color: var(--color__primary, #{$color__primary});
+				background-color: var(--color__primary, #{$color__primary});
+				a {
+					color: inherit;
+				}
+				&:hover {
+					a {
+						color: $color__white;
+					}
+				}
+			}
+		}
+  }
+  
+  .rq-alike-compare {
+    padding-left: 75px;
+    padding-right: 75px;
+    @media (max-width: 1460px) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @media (max-width: 767px) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .rq-alike-show-difference {
+      text-decoration: none;
+      background-color: var(--color__primary, #{$color__primary});
+    }
+    .rq-alike-topic-p {
+      .rq-alike-topic {
+        background-color: $color__background-light;
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+    .rq-alike-items {
+      .rq-alike-items-list {
+        font-size: 15px;
+        &:last-child {
+          border-bottom: 0;
+        }
+        p {
+          font-size: 15px;
+          line-height: 1.8;
+        }
+        a.button,
+        a.add_to_cart_button {
+          display: inline-block;
+          padding: 10px 20px;
+          color: $color__white;
+          border-radius: 4px;
+          text-decoration: none;
+          background-color: var(--color__primary, #{$color__primary});
+          transition: all 0.3s ease;
+          &:hover,
+          &:focus {
+            background-color: var(--color__primary-hover, #{$color__primary-hover});
+          }
+        }
+      }
+    }
+  }
+}

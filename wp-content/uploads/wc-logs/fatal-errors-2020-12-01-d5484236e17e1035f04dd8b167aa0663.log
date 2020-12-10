@@ -1,0 +1,4 @@
+2020-12-01T07:09:24+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\cable\wp-content\plugins\turbo-helper\app\class-redqfw-admin-localize.php on line 3489
+
+2020-12-01T07:09:24+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\cable\wp-includes\wp-db.php on line 2033
+

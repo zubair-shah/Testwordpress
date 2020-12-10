@@ -1,0 +1,1 @@
+var SCHOLAR_ADMIN = {};

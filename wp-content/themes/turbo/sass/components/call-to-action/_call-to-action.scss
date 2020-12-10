@@ -1,0 +1,32 @@
+.rq-call-to-action {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 56px 0;
+	background-color: var(--color__primary, #{$color__primary});
+	@media (max-width: 767px) {
+		padding: 44px 0;
+	}
+	@media (max-width: 480px) {
+		padding: 32px 0;
+	}
+	h2 {
+		margin: 0;
+		color: $color__white;
+		font-size: var(--h1__font-size, #{$h1__font-size});
+		font-weight: 400;
+		@media (max-width: 1024px) {
+			font-size: calc(var(--h1__font-size, #{$h1__font-size}) - 2px);
+		}
+		@media (max-width: 991px) {
+			font-size: calc(var(--h1__font-size, #{$h1__font-size}) - 4px);
+		}
+		@media (max-width: 767px) {
+			font-size: $h1__font-size - 8px;
+		}
+		span {
+			font-weight: 600;
+			padding-left: 5px;
+		}
+	}
+}

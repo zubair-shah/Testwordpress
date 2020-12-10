@@ -1,0 +1,255 @@
+// reactive map marker and info window style
+.reactiveMapWrapper___ {
+	// map marker style
+	.map-marker-wrapper {
+		.turbo-marker {
+			&.marker-icon {
+				width: 60px;
+				height: 60px;
+				background-color: var(--color__primary, #{$color__primary});
+				&::before {
+					border-width: 19px 20px 0 20px;
+					bottom: -11px;
+					border-color: var(--color__primary, #{$color__primary}) transparent
+						transparent transparent;
+				}
+				.marker-icon-wrapper {
+					width: 50px;
+					height: 50px;
+					overflow: hidden;
+					z-index: 1;
+					background-color: $color__white;
+
+					i {
+						color: var(--color__primary, #{$color__primary});
+						font-size: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	// map info windo style
+	.reactiveInfoWindowWrapper {
+		flex-direction: column;
+		box-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
+		background-color: transparent;
+		overflow: hidden;
+
+		.reactiveInfoWindowImage {
+			width: 100%;
+			img {
+				margin: 0;
+			}
+
+			.turbo-owl-carousel {
+				position: relative;
+				height: 100%;
+				.owl-stage-outer {
+					border-top-left-radius: 3px;
+					border-top-right-radius: 3px;
+					overflow: hidden;
+					height: 100%;
+					.owl-stage {
+						height: 100%;
+						.owl-item {
+							height: 100%;
+						}
+					}
+				}
+				.owl-nav {
+					opacity: 0;
+					visibility: hidden;
+					.owl-prev,
+					.owl-next {
+						border: 0;
+						box-shadow: none;
+						outline: 0;
+						color: $color__white;
+						margin: 0;
+						padding: 0;
+						position: absolute;
+						border-radius: 0;
+						width: 45px;
+						height: 100%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						i {
+							font-size: 26px;
+						}
+					}
+					.owl-prev {
+						top: 0;
+						left: 0;
+						border-top-left-radius: 3px;
+						background: linear-gradient(
+							to left,
+							transparent 0%,
+							rgba(0, 0, 0, 0.2) 100%
+						);
+					}
+					.owl-next {
+						top: 0;
+						right: 0;
+						border-top-right-radius: 3px;
+						background: linear-gradient(
+							to right,
+							transparent 0%,
+							rgba(0, 0, 0, 0.2) 100%
+						);
+					}
+				}
+
+				// owl dot design
+				.owl-dots {
+					position: absolute;
+					bottom: 7px;
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					.owl-dot {
+						span {
+							width: 6px;
+							height: 6px;
+							margin: 5px 4px;
+							background-color: $color__white;
+							box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+						}
+
+						&.active {
+							span {
+								width: 8px;
+								height: 8px;
+								border-radius: 50%;
+								background-color: rgba(255, 255, 255, 0.8);
+							}
+						}
+
+						&:last-child:not(.active) {
+							span {
+								transform: scale(0.8);
+							}
+						}
+
+						&:first-child:not(.active) {
+							span {
+								transform: scale(0.8);
+							}
+						}
+					}
+				}
+
+				&:hover {
+					.owl-nav {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+
+		.reactiveInfoWindowContents {
+			padding: 12px 20px 20px;
+			border-bottom-left-radius: 3px;
+			border-bottom-right-radius: 3px;
+			background-color: $color__white;
+			position: relative;
+
+			&:after {
+				content: '';
+				display: block;
+				border-width: 10px 12px 0 12px;
+				border-color: $color__white transparent transparent transparent;
+				bottom: -16px;
+				position: absolute;
+				left: calc(50% - 10px);
+				width: 16px;
+				height: 16px;
+				border-style: solid;
+			}
+
+			address {
+				font-style: normal;
+				font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+				line-height: 20px;
+				font-weight: 400;
+				text-transform: capitalize;
+				color: var(--color__text-light, #{$color__text-light});
+				margin: 0;
+			}
+
+			h3.title,
+			h3.title a {
+				margin: 0;
+				padding: 3px 0;
+				text-transform: capitalize;
+				font-weight: 700;
+				font-size: var(--base__font-size, #{$base__font-size});
+				line-height: 30px;
+				text-decoration: none;
+				color: var(--heading__color, #{$color__heading-color});
+			}
+
+			p.price {
+				margin: 0;
+				font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+				line-height: 16px;
+				font-weight: 400;
+				text-transform: uppercase;
+				color: var(--heading__color, #{$color__heading-color});
+			}
+
+			.listing-btn-area {
+				margin-top: 17px;
+
+				a.view-details-btn {
+					display: inline-block;
+					font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+					line-height: 23px;
+					font-weight: 700;
+					text-transform: capitalize;
+					border-radius: 3px;
+					min-width: 115px;
+					min-height: 38px;
+					line-height: 38px;
+					text-align: center;
+					color: $color__white;
+					text-decoration: none;
+					background-color: var(--color__primary, #{$color__primary});
+					&:focus,
+					&:hover {
+						border-top-left-radius: 3px;
+						border-bottom-left-radius: 3px;
+						background-color: var(
+							--color__primary-hover,
+							#{$color__primary-hover}
+						);
+					}
+				}
+			}
+		}
+
+		.opacity-height {
+			height: 70px;
+			opacity: 0;
+			visibility: hidden;
+			z-index: 0;
+		}
+	}
+
+	// info window close button style
+	img[src*='close.svg'] {
+		width: 21px !important;
+		height: 21px !important;
+		padding: 6px;
+		background-color: $color__white;
+		border-radius: 50%;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+		margin: 0;
+		top: 14px !important;
+		right: 11px !important;
+	}
+}

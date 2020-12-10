@@ -1,0 +1,8 @@
+{
+  "turbo_dynamic_post_settings": {
+    "js": "turbo_dynamic_post_settings.js"
+  },
+  "turbo_dynamic_page_settings": {
+    "js": "turbo_dynamic_page_settings.js"
+  }
+}

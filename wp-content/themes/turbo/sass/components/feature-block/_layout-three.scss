@@ -1,0 +1,101 @@
+.turbo-highlighted-feature-block {
+	&.layout-three {
+		padding: 132px 0;
+		margin: 56px 0;
+		background-color: $color__background-light !important;
+		background-position: center right !important;
+		background-size: 90% auto !important;
+		@media (max-width: 991px) {
+			padding: 92px 0;
+			margin: 40px 0;
+			background-size: 100% auto !important;
+		}
+		.col-content {
+			max-width: 560px;
+			margin-left: auto;
+			padding: 64px 48px;
+			border-radius: 10px;
+			backdrop-filter: blur(6px);
+			background-color: rgba(255, 255, 255, 0.9);
+			box-shadow: 0 13px 90px 0 rgba(16, 66, 97, 0.11);
+			@media (max-width: 991px) {
+				max-width: 510px;
+				.rq-title-container {
+					padding: 0;
+				}
+			}
+			@media (max-width: 575px) {
+				max-width: calc(100% - 40px);
+				margin-right: auto;
+			}
+			@media (max-width: 480px) {
+				max-width: calc(100% - 30px);
+				padding: 32px 24px;
+				.rq-title-container {
+					margin-bottom: 32px;
+				}
+			}
+		}
+		.rq-title-container {
+			.rq-title {
+				margin-top: 0;
+				margin-bottom: 18px;
+			}
+		}
+		.featured-descrition {
+			color: var(--color__text-light, #{$color__text-light});
+			line-height: 2;
+		}
+		.hightlighted-featured {
+			padding: 0;
+			margin: 0;
+			li {
+				margin: 0 0 40px;
+				@media (max-width: 480px) {
+					margin-bottom: 32px;
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.highlighted-feature {
+			display: flex;
+			align-items: flex-start;
+			list-style: none;
+			@media (max-width: 320px) {
+				flex-direction: column;
+			}
+			.turbo-icon-wrap {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 64px;
+				height: 64px;
+				flex-shrink: 0;
+				margin-right: 24px;
+				border-radius: 50%;
+				color: var(--color__primary, #{$color__primary});
+				font-size: calc(var(--base__font-size, #{$base__font-size}) + 4px);
+				background-color: rgba(255, 255, 255, 0.9);
+				@media (max-width: 320px) {
+					margin-right: 0;
+					margin-bottom: 24px;
+				}
+			}
+			.turbo-feature-content {
+				h4 {
+					margin-top: 0;
+					margin-bottom: 8px;
+					font-size: calc(var(--base__font-size, #{$base__font-size}) + 2px);
+					font-weight: 600;
+				}
+				.content {
+					margin: 0;
+					line-height: 1.8;
+					color: var(--color__text-light, #{$color__text-light});
+				}
+			}
+		}
+	}
+}

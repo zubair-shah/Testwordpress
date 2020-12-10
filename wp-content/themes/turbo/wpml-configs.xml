@@ -1,0 +1,121 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="copy">_turbo_car_nice_image_seat</custom-field>
+        <custom-field action="copy">_turbo_car_nice_image_product_tab_small_image</custom-field>
+        <custom-field action="copy">_turbo_car_nice_image_product_nice_image</custom-field>
+        <custom-field action="copy">_turbo_car_nice_image_bg_color</custom-field>
+    </custom-fields>
+    <admin-texts>
+        <key name="turbo_option_data">
+            <key name="helper-favicon">
+                <key name="1">
+                    <key name="url"/>
+                    <key name="id"/>
+                    <key name="height"/>
+                    <key name="width"/>
+                    <key name="thumbnail"/>
+                </key>
+            </key>
+            <key name="favicon-iphone">
+                <key name="1">
+                    <key name="url"/>
+                    <key name="id"/>
+                    <key name="height"/>
+                    <key name="width"/>
+                    <key name="thumbnail"/>
+                </key>
+            </key>
+            <key name="favicon-ipad">
+                <key name="1">
+                    <key name="url"/>
+                    <key name="id"/>
+                    <key name="height"/>
+                    <key name="width"/>
+                    <key name="thumbnail"/>
+                </key>
+            </key>
+
+            <key name="turbo-custom-js"/>
+            <key name="google-analytics"/>
+            <key name="show_menu_right_section"/>
+            <key name="show_login"/>
+            <key name="show_currency_switcher"/>
+            <key name="show_listing_page_search"/>
+            <key name="header-icon">
+                <key name="1">
+                    <key name="url"/>
+                    <key name="id"/>
+                    <key name="height"/>
+                    <key name="width"/>
+                    <key name="thumbnail"/>
+                </key>
+            </key>
+            <key name="listing_page_search_form_heading_title"/>
+            <key name="show_listing_page_pickup_location"/>
+            <key name="pickup_location_text_on_listing_page"/>
+            <key name="pickup_location_placeholder_on_listing_page"/>
+            <key name="show_listing_page_dropoff_location"/>
+            <key name="dropooff_location_text_on_listing_page"/>
+            <key name="dropooff_location_placeholder_on_listing_page"/>
+            <key name="show_listing_page_pickup_date"/>
+            <key name="pickup_date_text_on_listing_page"/>
+            <key name="show_listing_page_dropoff_date"/>
+            <key name="dropooff_date_text_on_listing_page"/>
+            <key name="dropooff_date_placeholder_on_listing_page"/>
+            <key name="featured-img">
+                <key name="1">
+                    <key name="url"/>
+                    <key name="id"/>
+                    <key name="height"/>
+                    <key name="width"/>
+                    <key name="thumbnail"/>
+                </key>
+            </key>
+            <key name="show_copyrights"/>
+            <key name="footer_logo">
+                <key name="1">
+                    <key name="url"/>
+                    <key name="id"/>
+                    <key name="height"/>
+                    <key name="width"/>
+                    <key name="thumbnail"/>
+                </key>
+            </key>
+
+            <key name="listing_book_now_btn_text"/>
+            <key name="listing_day_or_night_text"/>
+            <key name="listing_total_cost_text"/>
+
+            <key name="copyright_text"/>
+            <key name="company_name"/>
+            <key name="company_url"/>
+            <key name="copyright_year"/>
+            <key name="show_social"/>
+            <key name="facebook_profile"/>
+            <key name="twitter_profile"/>
+            <key name="linkedin_profile"/>
+            <key name="google_profile"/>
+            <key name="instagram_profile"/>
+            <key name="dribble_profile"/>
+            <key name="pinterest_profile"/>
+            <key name="github_profile"/>
+            <key name="stackoverflow_profile"/>
+            <key name="rss_profile"/>
+            <key name="turbo-show-language"/>
+            <key name="book_now_heading"/>
+            <key name="listing_price_starting_from"/>
+
+            <key name="turbo-language">
+                <key name="1">
+                    <key name="EN"/>
+                    <key name="DE"/>
+                    <key name="IT"/>
+                    <key name="FR"/>
+                </key>
+            </key>
+            <key name="turbo-wpml-select"/>
+            <key name="show_language"/>
+
+        </key>
+    </admin-texts>
+</wpml-config>

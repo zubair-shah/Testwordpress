@@ -1,0 +1,119 @@
+.testimonial-layout-one {
+	&.rq-content-block {
+		padding: 80px 0;
+		@media (max-width: 1024px) {
+			padding: 72px 0;
+		}
+		@media (max-width: 991px) {
+			padding: 64px 0;
+		}
+	}
+	.rq-testimonial-content {
+		max-width: 960px;
+		margin: 0 auto;
+
+		.rq-title {
+			text-align: center;
+			margin: 0 0 32px;
+			@media (max-width: 991px) {
+				font-size: $h3__font-size + 2px;
+			}
+			@media (max-width: 767px) {
+				font-size: var(--h3__font-size, #{$h3__font-size});
+				margin: 0 0 20px;
+			}
+		}
+
+		.testimonial-wrapper {
+      position: relative;
+			.item {
+				text-align: center;
+				.testimoinal-text {
+					font-size: calc(var(--base__font-size, #{$base__font-size}) + 2px);
+					line-height: 1.75;
+					margin-bottom: 40px;
+				}
+				.author-info {
+					img {
+						width: 80px;
+						height: 80px;
+						object-fit: cover;
+						border-radius: 50%;
+						margin: 0 auto 24px;
+					}
+				}
+				.author-designation {
+					color: var(--color__text-light, #{$color__text-light});
+				}
+				.author-name-title a {
+					display: inline-flex;
+					align-items: center;
+					margin-top: 8px;
+					font-weight: 600;
+					text-decoration: none;
+					font-size: calc(var(--base__font-size, #{$base__font-size}) + 2px);
+					> i {
+						margin: 2px 2px 0;
+					}
+					span {
+						color: orange;
+						font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+					}
+				}
+      }
+      .owl-prev,
+			.owl-next {
+        @media (min-width: 481px) {
+          opacity: 0;
+          visibility: hidden;
+        }
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: $color__white;
+				box-shadow: 0 5px 10px -2px rgba(16, 66, 97, 0.06);
+				border: 1px solid $color__border;
+				position: absolute;
+				top: 35%;
+				cursor: pointer;
+				transition: all 0.2s ease;
+				z-index: 1;
+				@media (max-width: 480px) {
+					position: initial;
+				}
+				&:hover,
+				&:focus {
+					background-color: $color__background-light;
+				}
+      }
+      &:hover {
+        .owl-next,
+        .owl-prev {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+			.owl-prev {
+				left: -10px;
+			}
+			.owl-next {
+				right: -10px;
+			}
+			@media (max-width: 480px) {
+				.owl-nav {
+					display: flex;
+					align-items: center;
+          justify-content: center;
+          margin-top: 32px;
+					.owl-prev,
+					.owl-next {
+						margin: 0 8px;
+					}
+				}
+			}
+		}
+	}
+}

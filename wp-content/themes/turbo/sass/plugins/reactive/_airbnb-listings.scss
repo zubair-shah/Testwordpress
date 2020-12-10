@@ -1,0 +1,822 @@
+#reactive-root {
+	@media (min-width: 992px) {
+		margin-bottom: 60px !important;
+	}
+	@media (max-width: 991px) {
+		margin-bottom: 30px !important;
+	}
+	@media (max-width: 767px) {
+		margin-bottom: 0 !important;
+	}
+
+	// toggle btn
+	.reactiveTypeToggleBtn___ {
+		min-height: auto;
+	}
+}
+
+// Turbo map style for home listing
+.turbo-listing-home-map {
+	> div > div {
+		padding: 0 !important;
+	}
+	.reactiveGridContents___ {
+		padding: 0;
+	}
+}
+
+// Turbo home listing search block
+.turbo-listing-home-search {
+	border-radius: 3px;
+	min-height: 164px;
+	margin-top: -56px;
+	z-index: 2 !important;
+	box-shadow: 0 1px 20px rgba(0, 0, 0, 0.08);
+	background-color: $color__white !important;
+	@media (max-width: 767px) {
+		margin-top: 0;
+	}
+	@media (max-width: 812px) {
+		.reactiveGridContents___ {
+			padding-bottom: 30px;
+		}
+	}
+
+	h3.reactiveBlockTitle___ {
+		padding: 0;
+		margin: 0 0 5px;
+		color: var(--heading__color, #{$color__heading-color});
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 700;
+		@media (max-width: 812px) {
+			margin-bottom: 15px;
+		}
+		@media (max-width: 480px) {
+			font-size: 18px;
+			line-height: 28px;
+			margin-bottom: 14px;
+		}
+	}
+
+	.reactiveSingleBoxFrontendView___ {
+		&:first-child {
+			.reactiveNormSearchGridContents___ {
+				.reuseFormWrapper___ {
+					&::after {
+						content: none;
+					}
+					@media (max-width: 812px) {
+						border-top-left-radius: 3px;
+						border-top-right-radius: 3px;
+						&::after {
+							content: '';
+						}
+					}
+				}
+			}
+		}
+
+		&:last-child {
+			.reactiveNormSearchGridContents___ {
+				.reuseFormWrapper___ {
+					&::after {
+						content: none;
+					}
+					@media (max-width: 812px) {
+						border-bottom-left-radius: 3px;
+						border-bottom-right-radius: 3px;
+					}
+				}
+			}
+		}
+
+		.reactiveNormSearchGridContents___ {
+			padding-left: 0;
+			padding-right: 0;
+			@media (max-width: 812px) {
+				padding: 0;
+			}
+			.reuseFormWrapper___ {
+				position: relative;
+				@media (min-width: 813px) {
+					&::after {
+						content: '';
+						width: 1px;
+						height: 18px;
+						display: block;
+						position: absolute;
+						top: calc(50% - 18px / 2);
+						left: 0;
+						background-color: $color__border;
+					}
+				}
+				@media (max-width: 812px) {
+					border-radius: 3px;
+					border: 1px solid $color__border;
+				}
+				@media (max-width: 812px) {
+					border-radius: 0;
+					border: 0;
+					&::after {
+						content: '';
+						width: calc(100% - 40px);
+						height: 1px;
+						display: block;
+						position: absolute;
+						left: 20px;
+						bottom: 0;
+						background-color: $color__border;
+					}
+				}
+
+				.reuseElementBlock___ {
+					h3.reuseLabel___ {
+						color: var(--heading__color, #{$color__heading-color});
+						font-size: calc(var(--base__font-size, #{$base__font-size}) - 1px);
+						font-weight: 600;
+					}
+
+					// select box
+					.dd__wrapper {
+						.dd__selectControl {
+							border: 0;
+							height: auto;
+							min-height: 55px;
+							padding: 0 25px;
+							border-radius: 0;
+							background-color: $color__background-light;
+							.dd__selectedItem,
+							.dd__placeholder {
+								color: var(--heading__color, #{$color__heading-color});
+								font-size: calc(var(--base__font-size, #{$base__font-size}) - 1px);
+								font-weight: 400;
+								> div {
+									white-space: nowrap;
+									width: 100%;
+									overflow: hidden;
+									text-overflow: ellipsis;
+								}
+							}
+							.dd-expandIcon {
+								fill: var(--color__text-light, #{$color__text-light});
+							}
+						}
+						.dd__list {
+							border: 0;
+							border-radius: 3px !important;
+							box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+							.dd__option {
+								color: var(--heading__color, #{$color__heading-color});
+								font-size: calc(var(--base__font-size, #{$base__font-size}) - 1px);
+								font-weight: 400;
+							}
+						}
+					}
+
+					// map autocomplete
+					.reuseMapAutoCompleteWrapper___ {
+						input[type='text'],
+						input.reuseMapAutoCompleteInput___ {
+							border: 0;
+							min-height: 55px;
+							height: auto;
+							padding-left: 52px;
+							background-color: $color__background-light;
+							color: var(--heading__color, #{$color__heading-color});
+							font-size: calc(var(--base__font-size, #{$base__font-size}) - 1px);
+							font-weight: 400;
+							&::placeholder {
+								color: var(--color__text-light, #{$color__text-light});
+								font-size: calc(var(--base__font-size, #{$base__font-size}) - 1px);
+								font-weight: 400;
+							}
+						}
+						&::before {
+							left: 25px;
+							color: var(--color__text-light, #{$color__text-light});
+							line-height: 58px;
+						}
+					}
+
+					// input field
+					input.reuseInputField___ {
+						border: 0;
+						border-radius: 0;
+						min-height: 56px;
+						height: auto;
+						padding: 0 25px;
+						color: var(--heading__color, #{$color__heading-color});
+						font-size: calc(var(--base__font-size, #{$base__font-size}) - 1px);
+						font-weight: 400;
+						background-color: $color__background-light;
+						&::placeholder {
+							color: var(--color__text-light, #{$color__text-light});
+							font-size: calc(var(--base__font-size, #{$base__font-size}) - 1px);
+						}
+					}
+
+					// date picker
+					.DateRangePicker {
+						width: 100%;
+						.DateRangePickerInput {
+							border-radius: 0;
+							border: 0;
+							background-color: $color__background-light;
+							width: 100%;
+							@media (max-width: 991px) {
+								padding: 0 12px;
+							}
+							.DateInput {
+								vertical-align: middle;
+								color: var(--heading__color, #{$color__heading-color});
+								font-size: calc(var(--base__font-size, #{$base__font-size}) - 1px);
+								font-weight: 400;
+								background-color: transparent;
+								.DateInput__display-text {
+									padding: 8px;
+									color: var(--color__text-main, #{$color__text-main});
+								}
+								.DateInput__display-text--focused {
+									color: $color__white;
+								}
+							}
+							.DateRangePickerInput__clear-dates {
+								padding: 0;
+								margin: 0;
+								position: absolute;
+								right: 10px;
+								top: 3px;
+								&:hover,
+								&:focus {
+									outline: 0;
+									background-color: transparent;
+								}
+								svg {
+									height: 10px;
+									width: 14px;
+								}
+							}
+						}
+					}
+				}
+
+				.reuseSingleElement___ {
+					button.reuseButton___ {
+						width: 100%;
+						min-height: 55px;
+						height: auto;
+						border-radius: 0;
+						color: $color__white;
+						background-color: var(--color__primary, #{$color__primary});
+						transition: background-color 0.3s ease;
+						&:hover,
+						&:focus {
+							background-color: var(
+								--color__primary-hover,
+								#{$color__primary-hover}
+							);
+						}
+						@media (max-width: 991px) {
+							border-radius: 2px;
+						}
+						@media (max-width: 991px) {
+							border-radius: 0;
+							border-bottom-left-radius: 3px;
+							border-bottom-right-radius: 3px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.layout.user__ {
+	.turbo-listing-home-search {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 30px;
+	}
+}
+
+// Turbo categroy menu listing design
+.turbo-category-menu-listing {
+	&.reactive-container-fluid {
+		padding: 0;
+		margin-top: -30px;
+	}
+
+	.category-menu-carousel {
+		position: relative;
+		margin: 0;
+		@media (max-width: 767px) {
+			padding: 0 28px;
+		}
+		@media (max-width: 480px) {
+			padding-left: 28px;
+			padding-right: 0;
+		}
+
+		.reactiveCatGridType-Simple {
+			margin: 30px 0;
+			border-radius: 3px;
+			overflow: hidden;
+			border: 2px solid transparent;
+			transition: all 0.3s ease-out;
+			.reactiveGridContent {
+				background-color: $color__background-light;
+				position: relative;
+				a {
+					display: block;
+					text-align: center;
+					.img-caption {
+						position: absolute;
+						bottom: 20px;
+						width: 100%;
+						height: auto;
+					}
+					h3.catTitle {
+						font-size: 17px;
+						font-weight: 700;
+						color: var(--heading__color, #{$color__heading-color});
+						margin: -15px 0 0;
+						padding: 0;
+						transform: translateY(0);
+						transition: all 0.3s ease-out;
+					}
+					p.totallCat {
+						color: var(--heading__color, #{$color__heading-color});
+						font-size: calc(var(--base__font-size, #{$base__font-size}) - 1px);
+						font-weight: 400;
+						opacity: 0;
+						visibility: hidden;
+						position: absolute;
+						width: 100%;
+						left: auto;
+						bottom: auto;
+						transform: translateY(20px);
+						transition: all 0.3s ease-out;
+					}
+				}
+			}
+			&:hover {
+				transform: scale(1.07);
+				box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+				@media (max-width: 767px) {
+					transform: scale(1);
+				}
+				.reactiveGridContent {
+					background-color: $color__white;
+					a {
+						h3.catTitle {
+							transform: translateY(-20px);
+						}
+						p.totallCat {
+							opacity: 1;
+							visibility: visible;
+							transform: translateY(-20px);
+						}
+					}
+				}
+			}
+		}
+
+		.owl-nav {
+			@media (max-width: 480px) {
+				display: none;
+			}
+			.owl-prev,
+			.owl-next {
+				height: 36px;
+				width: 36px;
+				border-radius: 50%;
+				line-height: 36px;
+				text-align: center;
+				overflow: hidden;
+				padding: 0;
+				background-color: $color__white;
+				box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+				position: absolute;
+				top: 42%;
+				transition: background-color 0.3s ease-out;
+				i {
+					font-size: 16px;
+					font-weight: 600;
+				}
+				&:hover {
+					i {
+						color: $color__white;
+					}
+				}
+			}
+			.owl-prev {
+				left: 67px;
+			}
+			.owl-next {
+				right: 67px;
+			}
+		}
+	}
+}
+
+// Turbo airbnb listing grid design
+.turbo-airbnb-grid {
+	.reactive-row {
+		margin-right: -38px;
+		margin-left: -38px;
+		.reactive-col-lg,
+		.reactive-col-lg-1,
+		.reactive-col-lg-2,
+		.reactive-col-lg-3,
+		.reactive-col-lg-4,
+		.reactive-col-lg-5,
+		.reactive-col-lg-6,
+		.reactive-col-lg-7,
+		.reactive-col-lg-8,
+		.reactive-col-lg-9,
+		.reactive-col-lg-10,
+		.reactive-col-lg-11,
+		.reactive-col-lg-12 {
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+	}
+
+	&.reactive-container-fluid {
+		@media (max-width: 767px) {
+			padding-right: 2rem;
+			padding-left: 2rem;
+		}
+	}
+
+	.reactive-product-listing-item {
+		overflow: hidden;
+		@media (max-width: 767px) {
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+		@media (max-width: 480px) {
+			padding: 0;
+			flex-basis: 100%;
+			max-width: 100%;
+		}
+		.product-image-wrapper {
+			.product-image-wrap {
+				a {
+					display: block;
+					img {
+						border-radius: 3px;
+						overflow: hidden;
+					}
+				}
+			}
+			&.turbo-owl-carousel {
+				position: relative;
+				.owl-stage-outer {
+					border-radius: 3px;
+					overflow: hidden;
+				}
+				.owl-nav {
+					opacity: 0;
+					visibility: hidden;
+					margin: 0;
+					.owl-prev,
+					.owl-next {
+						border: 0;
+						box-shadow: none;
+						outline: 0;
+						color: $color__white;
+						margin: 0;
+						padding: 0;
+						position: absolute;
+						border-radius: 0;
+						width: 45px;
+						height: 100%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						i {
+              &::after,
+							&::before {
+                content: none;
+                display: none;
+              }
+              &::after {
+                display: inline-block;
+                content: '';
+                width: 14px;
+                height: 14px;
+                border: 2.5px solid $color__white;
+                transform: rotate(45deg);
+              }
+						}
+					}
+					.owl-prev {
+						top: 0;
+						left: 0;
+						border-top-left-radius: 3px;
+						border-bottom-left-radius: 3px;
+						background: linear-gradient(
+							to left,
+							transparent 0%,
+							rgba(0, 0, 0, 0.2) 100%
+            );
+            i::after {
+              border-top: 0;
+              border-right: 0;
+            }
+					}
+					.owl-next {
+						top: 0;
+						right: 0;
+						border-top-right-radius: 3px;
+						border-bottom-right-radius: 3px;
+						background: linear-gradient(
+							to right,
+							transparent 0%,
+							rgba(0, 0, 0, 0.2) 100%
+            );
+            i::after {
+              border-bottom: 0;
+              border-left: 0;
+            }
+					}
+				}
+				// owl dot design
+				.owl-dots {
+					position: absolute;
+					bottom: 7px;
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					.owl-dot {
+						span {
+							width: 6px;
+							height: 6px;
+							margin: 5px 4px;
+							background-color: $color__white;
+							box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+						}
+						&.active {
+							span {
+								width: 8px;
+								height: 8px;
+								border-radius: 50%;
+								background-color: rgba(255, 255, 255, 0.8);
+							}
+						}
+						&:last-child:not(.active) {
+							span {
+								transform: scale(0.8);
+							}
+						}
+						&:first-child:not(.active) {
+							span {
+								transform: scale(0.8);
+							}
+						}
+					}
+				}
+				&:hover {
+					.owl-nav {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+
+		// Content design
+		.reactive-image-wrapper,
+		.product-image-wrapper {
+			position: relative;
+			a {
+				text-decoration: none;
+			}
+			a.reactiveWishlist {
+				position: absolute;
+				top: 15px;
+				right: 12px;
+				z-index: 1;
+				font-size: calc(var(--base__font-size, #{$base__font-size}) - 1px);
+				// color: @rq-teal-color;
+				width: 30px;
+				height: 30px;
+				border-radius: 3px;
+				text-align: center;
+				background-color: $color__white;
+				padding: 0;
+				box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+				opacity: 0;
+				visibility: hidden;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transform: scale(0.7);
+				transition: all 0.3s ease;
+				i {
+					&:before {
+						font-size: inherit;
+						top: 0;
+						padding: 0;
+						font-weight: 500;
+						position: unset;
+					}
+				}
+				&.wished {
+					color: #fc5c63;
+				}
+			}
+
+			.rq-listing-ps-wwcb-wrap {
+				font-size: 20px;
+				position: absolute;
+				top: 15px;
+				right: 15px;
+				z-index: 1;
+				.redq-wwc-add-wishlist {
+					color: $color__white;
+					&.wished {
+						color: #fc5c63;
+					}
+					i {
+						display: block;
+						&::before {
+							top: 0;
+							display: block;
+							font-size: 20px;
+						}
+					}
+				}
+			}
+		}
+
+		.product-image-wrapper {
+			overflow: hidden;
+			border-radius: 3px;
+			img {
+				border-radius: 3px;
+			}
+		}
+
+		.product-short-info {
+			margin-top: 8px;
+			margin-bottom: 27px;
+			position: relative;
+			min-height: 77px;
+
+			h3,
+			h3 a,
+			h3.title,
+			h3.title a,
+			a .woocommerce-loop-product__title,
+			> a {
+				margin: 0;
+				padding: 0;
+				font-weight: 700;
+				font-size: var(--base__font-size, #{$base__font-size});
+				line-height: 26px;
+				color: var(--heading__color, #{$color__heading-color});
+				overflow: hidden;
+				display: block;
+				white-space: nowrap;
+				width: 98%;
+				text-overflow: ellipsis;
+				text-decoration: none;
+				transition: all 0.3s ease-out;
+			}
+			address,
+			.rq-ps-listing-product-location {
+				margin: 0;
+				padding: 0;
+				font-style: normal;
+				font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+				font-weight: 400;
+				text-transform: capitalize;
+				color: var(--color__text-light, #{$color__text-light});
+				white-space: nowrap;
+				width: 100%;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				transition: all 0.3s ease-out;
+			}
+			.rq-ps-listing-product-location {
+				margin-top: 5px;
+			}
+			p.price,
+			.price {
+				color: var(--heading__color, #{$color__heading-color});
+				font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+				font-weight: 400;
+				margin: 4px 0 0;
+				text-transform: uppercase;
+				transition: all 0.3s ease-out;
+			}
+			.listing-btn-area {
+				position: absolute;
+				bottom: 0;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(20px);
+				transition: transform 0.4s ease;
+				a.view-details-btn {
+					display: inline-block;
+					font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+					line-height: 23px;
+					font-weight: 700;
+					text-transform: capitalize;
+					border-radius: 3px;
+					min-width: 115px;
+					min-height: 37px;
+					line-height: 37px;
+					text-align: center;
+					color: $color__white;
+					text-decoration: none;
+					background-color: var(--color__primary, #{$color__primary});
+					&:focus,
+					&:hover {
+						border-top-left-radius: 3px;
+						border-bottom-left-radius: 3px;
+						background-color: var(
+							--color__primary-hover,
+							#{$color__primary-hover}
+						);
+					}
+				}
+			}
+		}
+		&:hover {
+			.reactive-image-wrapper,
+			.product-image-wrapper {
+				a.reactiveWishlist,
+				.rq-listing-ps-wwcb-wrap {
+					transform: scale(1);
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+			.product-short-info {
+				address,
+				.rq-ps-listing-product-location {
+					opacity: 0;
+					visibility: hidden;
+				}
+				p.price {
+					opacity: 0;
+					visibility: hidden;
+				}
+				.title,
+				h3.title,
+				> a {
+					transform: translateY(-20px);
+				}
+				.listing-btn-area {
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0);
+				}
+			}
+		}
+	}
+}
+.col-md-4 {
+	.turbo-airbnb-grid {
+		.reactive-product-listing-item {
+			flex-basis: 100%;
+			max-width: 100%;
+		}
+	}
+}
+
+// load more button
+.turbo-airbnb__grid-template {
+	.reactiveGridContents___ {
+		.ReactiveGridHolder___ {
+			padding-top: 20px;
+		}
+	}
+	button {
+		&.ReactiveGridLoadMore___ {
+			border: 0;
+			box-shadow: none;
+			background-color: transparent;
+			font-weight: 600;
+			text-transform: capitalize;
+			text-decoration: underline;
+			transition: all 0.3s ease-out;
+			&:hover,
+			&:focus {
+				outline: 0;
+				text-decoration: none;
+			}
+		}
+	}
+	.reactInfiniteSpinner___ {
+		div[class*='css-'] {
+			width: 10px;
+			height: 10px;
+		}
+	}
+}

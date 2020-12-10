@@ -1,0 +1,38 @@
+.search-layout-three {
+	text-align: center;
+	margin-bottom: 100px;
+	.rq-home-banner-conetnt {
+		max-width: 702px;
+		box-sizing: border-box;
+		margin: 88px auto 56px;
+		h1 {
+			font-size: $h1__font-size + 4px;
+			@media (max-width: 991px) {
+				font-size: $h1__font-size + 2px;
+			}
+			@media (max-width: 767px) {
+				font-size: var(--h1__font-size, #{$h1__font-size});
+			}
+			@media (max-width: 575px) {
+				font-size: calc(var(--h1__font-size, #{$h1__font-size}) - 2px);
+			}
+		}
+		p {
+			font-size: calc(var(--base__font-size, #{$base__font-size}) + 2px);
+			line-height: 2;
+			padding: 0 32px;
+		}
+	}
+	.rq-home-banner-car {
+		img {
+			max-width: 82%;
+			height: auto;
+		}
+	}
+}
+
+.turbo-horizontal-search-bottom {
+	margin: -60px auto 70px;
+	z-index: 9999;
+	position: relative;
+}

@@ -1,0 +1,35 @@
+
+---Downloaded files---
+The import files for: Turbo_Car_Rental_3 were successfully downloaded!
+Initial max execution time = 360
+Files info:
+Site URL = http://preview.redq.io/turbo/car-deal
+Data file = /var/www/html/turbo/wp-content/uploads/sites/5/2020/05/demo-content-import-file_2020-05-06__22-29-12.xml
+Widget file = /var/www/html/turbo/wp-content/uploads/sites/5/2020/05/demo-widgets-import-file_2020-05-06__22-29-12.json
+Customizer file = not defined!
+Redux files:
+turbo_option_data -> /var/www/html/turbo/wp-content/uploads/sites/5/2020/05/demo-redux-import-file_0-2020-05-06__22-29-12.json 
+
+
+------
+New AJAX call!
+
+
+---pt-ocdi/before_widgets_import---
+
+
+---Importing widgets---
+Footer widgets : 
+
+Turbo Pages - No Title - Imported
+Turbo Pages - No Title - Imported
+Turbo Pages - No Title - Imported
+Turbo Pages - No Title - Imported
+
+
+
+---Importing Redux settings---
+Redux settings import for: turbo_option_data finished successfully!
+
+---pt-ocdi/after_import---
+

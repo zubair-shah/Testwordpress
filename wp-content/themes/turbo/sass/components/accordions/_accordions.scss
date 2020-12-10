@@ -1,0 +1,88 @@
+.turbo-accordion-area {
+	.elements-title {
+		font-size: var(--h2__font-size, #{$h2__font-size});
+		text-transform: inherit;
+		text-align: center;
+		margin: 0 0 72px;
+		@media (max-width: 1024px) {
+			margin: 0 0 64px;
+		}
+		@media (max-width: 991px) {
+			font-size: calc(var(--h2__font-size, #{$h2__font-size}) - 2px);
+			margin: 0 0 56px;
+		}
+		@media (max-width: 767px) {
+			font-size: calc(var(--h2__font-size, #{$h2__font-size}) - 4px);
+			margin: 0 0 40px;
+		}
+	}
+	.card {
+		border-radius: 10px;
+		margin-bottom: 16px;
+		box-shadow: 0 0 10px 1px rgba(16, 66, 97, 0.09);
+		transition: all 0.2s ease;
+		&:hover {
+			box-shadow: 0 0 10px 3px rgba(16, 66, 97, 0.09);
+		}
+		button {
+			&:not([name='editMode']) {
+				width: 100%;
+				color: var(--heading__color, #{$color__heading-color});
+				font-size: var(--h4__font-size, #{$h4__font-size});
+				font-weight: 600;
+				text-align: left;
+				padding: 32px 88px 32px 40px;
+				background-color: $color__white;
+				position: relative;
+				@media (max-width: 1024px) {
+					padding: 24px 64px 24px 32px;
+					font-size: calc(var(--h4__font-size, #{$h4__font-size}) - 2px);
+				}
+				@media (max-width: 767px) {
+					font-size: $h4__font-size - 4px;
+					padding: 24px 48px 24px 24px;
+				}
+
+				&.collapsed {
+					&:before {
+						content: '+';
+					}
+				}
+				&:before {
+					content: '-';
+					font-size: var(--h3__font-size, #{$h3__font-size});
+					color: var(--heading__color, #{$color__heading-color});
+					position: absolute;
+					right: 40px;
+					top: 0;
+					height: 101%;
+					text-align: center;
+					background: transparent;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					@media (max-width: 1024px) {
+						right: 32px;
+						font-size: calc(var(--h3__font-size, #{$h3__font-size}) - 2px);
+					}
+					@media (max-width: 767px) {
+						right: 24px;
+						font-size: calc(var(--h3__font-size, #{$h3__font-size}) - 4px);
+					}
+				}
+			}
+		}
+		.card-body {
+			color: var(--color__text-light, #{$color__text-light});
+			padding: 0 50px 40px;
+			line-height: 1.7;
+			margin-top: -6px;
+			@media (max-width: 1024px) {
+				padding: 0 32px 32px;
+			}
+			@media (max-width: 767px) {
+				padding: 0 24px 24px;
+			}
+		}
+	}
+}

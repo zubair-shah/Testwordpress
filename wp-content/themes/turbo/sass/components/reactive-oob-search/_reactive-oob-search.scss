@@ -1,0 +1,340 @@
+// OOB search
+.turbo-obb-vertical-search-form,
+.turbo-horizontal-search-oob {
+	#reactive-root {
+		margin-bottom: 0 !important;
+
+		.reactiveSingleBoxFrontendView___ {
+			.reactiveNormSearchGridContents___ {
+				padding: 0 0 25px;
+				@media (max-width: 767px) {
+					padding: 0 0 16px;
+				}
+
+				.reuseLabelsWrapper___ {
+					margin-bottom: 12px;
+					@media (max-width: 767px) {
+						margin-bottom: 4px;
+					}
+				}
+
+				.reuseFormWrapper___ {
+					.reuseLabelsWrapper___ {
+						h3 {
+							display: block;
+							color: var(--heading__color, #{$color__heading-color});
+							font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+							font-weight: 600;
+							text-transform: uppercase;
+							margin-bottom: 0;
+						}
+					}
+
+					// input field
+					.reuseElementBlock___ {
+						input {
+							border: 1px solid lighten(#000000, 90%);
+							height: 55px;
+							border-radius: 5px;
+							color: var(--heading__color, #{$color__heading-color});
+							font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+							font-weight: 500;
+							padding: 0 15px;
+							&:hover,
+							&:focus {
+								outline: 0;
+								box-shadow: none;
+								border: 1px solid lighten(#000000, 90%) !important;
+							}
+							&::placeholder {
+								color: var(--color__text-light, #{$color__text-light});
+							}
+						}
+
+						// hide mapautocomplete icon
+						.reuseMapAutoCompleteWrapper___ {
+							&:before {
+								content: none;
+							}
+						}
+
+						// daterangepicker
+						.DateRangePicker {
+							width: 100%;
+						}
+
+						// select box style
+						.dd__wrapper {
+							.dd__selectControl {
+								border: 1px solid lighten(#000000, 90%);
+								height: 55px;
+								border-radius: 5px !important;
+								svg {
+									color: var(--color__text-light, #{$color__text-light});
+								}
+								.dd__selected {
+									color: var(--heading__color, #{$color__heading-color});
+									font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+									font-weight: 500;
+									.dd__placeholder {
+										color: var(--color__text-light, #{$color__text-light});
+									}
+								}
+							}
+							.dd__list {
+								box-shadow: none;
+								border: 1px solid lighten(#000000, 90%);
+								.dd__option {
+									color: var(--heading__color, #{$color__heading-color});
+									font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+									font-weight: 500;
+									padding: 15px;
+								}
+							}
+						}
+					}
+
+					// apply filter button
+					button {
+						&.reuseButton___ {
+							width: 100%;
+							color: $color__white;
+							font-size: var(--base__font-size, #{$base__font-size});
+							font-weight: 600;
+							text-transform: uppercase;
+							min-height: 55px;
+							border-radius: 5px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							padding: 0.5px 0 0;
+							border: 0;
+							margin-top: 10px;
+							position: relative;
+							background-color: var(--color__primary, #{$color__primary});
+							transition: background-color 0.2s ease;
+							&:focus,
+							&:hover {
+								outline: 0;
+								box-shadow: none;
+								background-color: var(
+									--color__primary-hover,
+									#{$color__primary-hover}
+								);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Turbo horizontal search oob
+.search-layout-one,
+.turbo-horizontal-search-bottom {
+	.turbo-horizontal-search-oob {
+		#reactive-root {
+			.react-grid-layout.user__ {
+				box-shadow: 0 0 30px rgba(16, 66, 97, 0.11),
+					0 25px 80px -20px rgba(16, 66, 97, 0.23);
+				min-height: 150px;
+				border-radius: 10px;
+				margin: 0;
+				padding: 0 45px 0 30px;
+				text-align: left;
+				background-color: $color__white;
+				z-index: 999;
+				@media (min-width: 992px) and (max-width: 1200px) {
+					padding: 0 20px 0 20px;
+				}
+
+				p.screen-reader-only {
+					margin-bottom: 0;
+				}
+
+				.reactiveSingleBoxFrontendView___ {
+					.reactiveNormSearchGridContents___ {
+						.reuseFormWrapper___ {
+							@media (max-width: 991px) {
+								max-width: calc(100% - 60px);
+							}
+
+							// Button and label
+							.reuseLabelsWrapper___ {
+								margin-bottom: 10px;
+							}
+
+							button.reuseButton___ {
+								width: 162px;
+								margin-top: 40px;
+								@media (max-width: 991px) {
+									margin-top: 0;
+								}
+							}
+
+							// Calender position
+							@media (min-width: 992px) {
+								.DateRangePicker__picker {
+									left: calc(50% - 618px / 2) !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Turbo Calender style
+.DateRangePicker {
+	display: block;
+
+	.DateRangePickerInput {
+		border-radius: 5px;
+		// overflow: hidden;
+		border: 1px solid lighten(#000000, 90%);
+		height: 55px;
+		display: flex;
+		align-items: center;
+
+		.DateInput {
+			color: var(--heading__color, #{$color__heading-color});
+			font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+			font-weight: 500;
+			input {
+				&::placeholder {
+					color: var(--color__text-light, #{$color__text-light});
+				}
+			}
+			.DateInput__display-text {
+				color: var(--color__text-light, #{$color__text-light});
+			}
+			.DateInput__display-text--focused {
+				border-radius: 3px;
+				color: $color__white;
+				background-color: var(--color__primary, #{$color__primary});
+			}
+			.DateInput__display-text--has-input {
+				color: var(--heading__color, #{$color__heading-color});
+			}
+		}
+
+		.DateRangePickerInput__arrow {
+			svg {
+				color: var(--color__text-light, #{$color__text-light});
+			}
+		}
+
+		// clear date button
+		button.DateRangePickerInput__clear-dates {
+			position: absolute;
+			right: 0;
+			margin: 0;
+			&.DateRangePickerInput__clear-dates--hide {
+				display: none;
+			}
+			&:hover,
+			&:focus {
+				outline: 0;
+				box-shadow: none;
+				background-color: transparent;
+			}
+		}
+	}
+
+	// calender mobile width
+	@media (max-width: 767px) {
+		.DateRangePicker__picker--horizontal {
+			border-radius: 5px;
+			.DayPicker.DayPicker--horizontal {
+				max-width: 320px;
+				border-radius: 5px;
+				overflow: hidden;
+			}
+		}
+	}
+}
+
+.DateRangePicker__picker {
+	border-radius: 5px;
+	button {
+		min-height: auto;
+		border-radius: 0;
+		&:hover,
+		&:focus {
+			background-color: $color__background-light;
+		}
+		&.DayPickerKeyboardShortcuts__show--bottom-right {
+			border-right-color: var(--color__primary, #{$color__primary});
+			&:hover,
+			&:focus {
+				background-color: transparent;
+			}
+		}
+	}
+	.DayPickerNavigation--horizontal {
+		.DayPickerNavigation__next,
+		.DayPickerNavigation__prev {
+			svg {
+				fill: var(--heading__color, #{$color__heading-color});
+			}
+			&:hover {
+				border-color: var(--color__primary, #{$color__primary});
+				background-color: var(--color__primary, #{$color__primary});
+				svg {
+					fill: $color__white;
+				}
+			}
+		}
+	}
+	.DayPicker__week-header {
+		ul {
+			li {
+				margin: 0;
+				line-height: initial;
+				small {
+					color: var(--heading__color, #{$color__heading-color});
+					font-size: 90%;
+				}
+			}
+		}
+	}
+	.CalendarMonth__caption {
+		color: var(--heading__color, #{$color__heading-color});
+	}
+
+	tbody.js-CalendarMonth__grid {
+		tr {
+			td.CalendarDay {
+				&.CalendarDay--selected-start,
+				&.CalendarDay--selected-end {
+					color: $color__white;
+					border-color: var(--color__primary, #{$color__primary});
+					background-color: var(--color__primary, #{$color__primary});
+				}
+				&.CalendarDay--selected-span,
+				&.CalendarDay--hovered-span {
+					color: var(--color__primary, #{$color__primary});
+					border-color: var(--color__primary, #{$color__primary});
+					background-color: var(--color__secondary, #{$color__secondary});
+					button:hover,
+					button:focus,
+					&.CalendarDay--selected-start {
+						color: $color__white;
+						border-color: var(--color__primary, #{$color__primary});
+						background-color: var(--color__primary, #{$color__primary});
+					}
+				}
+			}
+		}
+	}
+}
+
+.DayPickerKeyboardShortcuts__panel {
+	.DayPickerKeyboardShortcuts__title {
+		color: var(--heading__color, #{$color__heading-color});
+	}
+}

@@ -1,0 +1,31 @@
+.woocommerce-notices-wrapper .rental-notice,
+.woocommerce-form-coupon-toggle .rental-notice,
+.woocommerce-cart .woocommerce > .rental-notice {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-radius: 4px;
+  border: 1px solid $color__border;
+  margin-bottom: 32px;
+}
+.woocommerce-form-coupon-toggle {
+	.rental-notice {
+		flex-direction: row;
+	}
+}
+.single
+	.rq-listing-header
+	+ .rq-page-content
+	.woocommerce-notices-wrapper
+	.rental-notice {
+	margin-bottom: 32px;
+	margin-top: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: calc(100% - 100px);
+	@media (max-width: 767px) {
+		max-width: calc(100% - 50px);
+	}
+}

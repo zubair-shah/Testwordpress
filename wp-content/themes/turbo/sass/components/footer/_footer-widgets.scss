@@ -1,0 +1,102 @@
+.rq-main-footer {
+	padding: 48px 0;
+	background-color: $color__background-banner;
+	.toggle-widget {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 45px;
+		border: 0;
+		text-align: left;
+		text-transform: uppercase;
+		color: $color__white;
+		background-color: $color__background-banner900;
+		transition: all 0.3s ease;
+		&:hover,
+		&:focus {
+			outline: 0;
+		}
+		&:before {
+			content: '+';
+			position: absolute;
+			right: 18px;
+			text-align: center;
+			line-height: 20px;
+			top: 12px;
+			font-size: 26px;
+		}
+		&.active {
+			&:before {
+				content: '-';
+			}
+		}
+		@media (min-width: 992px) {
+			display: none;
+		}
+	}
+
+	.footer-widget {
+		margin-bottom: -30px;
+		&.footer-widget-toggle {
+			@media (max-width: 992px) {
+				display: none;
+				margin-top: 32px;
+			}
+		}
+		.widget-title {
+			.widget-list {
+				margin-top: -15px;
+				margin-bottom: 0;
+				a {
+					color: rgba(255, 255, 255, 0.5);
+					text-transform: capitalize;
+				}
+			}
+		}
+		.widget-list {
+			font-size: calc(var(--base__font-size, #{$base__font-size}) - 1px);
+			margin-bottom: 30px;
+			li,
+			p,
+			.tagcloud {
+				color: rgba(255, 255, 255, 0.5);
+				a,
+				strong {
+					color: rgba(255, 255, 255, 0.8);
+				}
+				a {
+					&:hover,
+					&:focus {
+						color: rgba(255, 255, 255, 0.9);
+					}
+				}
+			}
+			.rq-newsletter-form {
+				display: flex;
+				align-items: center;
+				input[type='email'] {
+					border-right: 0;
+					border-top-right-radius: 0;
+					border-bottom-right-radius: 0;
+				}
+				button:not([name='editMode']) {
+					border-top-left-radius: 0;
+					border-bottom-left-radius: 0;
+				}
+			}
+		}
+		.widget-title,
+		.widget-title a {
+			color: var(--color__primary, #{$color__primary});
+			font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: normal;
+			margin-top: 0;
+			margin-bottom: 16px;
+		}
+		.widget-title a {
+			text-decoration: none;
+		}
+	}
+}

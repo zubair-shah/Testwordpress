@@ -1,0 +1,623 @@
+// search components style
+.react-grid-layout {
+	&.user__ {
+		.turbo-listing__components-area {
+			background-color: $color__white !important;
+			position: fixed !important;
+
+			> div > div {
+				padding: 0 !important;
+			}
+
+			.reactiveGridContents___ {
+				border-bottom: 1px solid $color__border;
+			}
+		}
+	}
+
+	.turbo-listing__components-area {
+		.reactiveGridContents___ {
+			padding: 20px 30px;
+
+			@media (max-width: 767px) {
+				padding: 20px 20px;
+			}
+
+			@media (max-width: 480px) {
+				padding: 20px 15px;
+			}
+
+			.reactiveSingleBoxFrontendView___ {
+				.reactiveNormSearchGridContents___ {
+					padding: 0;
+
+					div {
+						button[type='button'] {
+							&#ResetButton,
+							&#FilterButton,
+							&#applyFilter {
+								width: 100%;
+								border-radius: 3px;
+								font-weight: 400;
+								color: $color__white;
+								background-color: #fc5c63;
+								transition: all 0.3s ease;
+
+								&:hover,
+								&:focus {
+									background-color: lighten(#fc5c63, 2%);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// turbo search component design for listing view
+.reactiveSingleBoxFrontendView___ {
+	&.reactiveDropdownView___ {
+		// search component title
+		.reactiveSearchElementTitle___ {
+			height: 44px;
+			border-radius: 3px;
+			border: 1px solid $color__border;
+			background-color: $color__white;
+
+			span {
+				color: var(--color__text-main, #{$color__text-main});
+				font-weight: 400;
+				font-size: calc(var(--base__font-size, #{$base__font-size}) - 1px);
+				line-height: 23px;
+			}
+
+			button[type='button'] {
+				min-height: auto;
+				border-left: 1px solid $color__border;
+			}
+
+			&.dropDownActive {
+				border-color: rgba(0, 0, 0, 0.08);
+				background-color: var(--color__primary, #{$color__primary});
+				span,
+				button[type='button'] i {
+					color: $color__white;
+				}
+				button[type='button'] {
+					border-left-color: rgba(0, 0, 0, 0.08);
+				}
+			}
+		}
+
+		// search component content
+		.reactiveSearchGridContents___ {
+			width: 270px;
+			border: 0;
+			padding: 20px;
+			margin-top: 20px;
+			border-radius: 3px;
+			box-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
+
+			.reuseFormWrapper___ {
+				.reuseSingleElement___ {
+					.reuseElementBlock___ {
+						.reuseLabelsWrapper___ {
+							h3.reuseLabel___,
+							span.reuseShortcodeSubtitle___ {
+								color: var(--color__text-main, #{$color__text-main});
+								font-weight: 400;
+								font-size: calc(var(--base__font-size, #{$base__font-size}) - 1px);
+								line-height: 23px;
+							}
+						}
+
+						// map auto complete
+						.reuseMapAutoCompleteWrapper___ {
+							&::before {
+								top: 4px;
+								font-size: 20px;
+								color: var(--color__text-light, #{$color__text-light});
+							}
+							input.reuseMapAutoCompleteInput___ {
+								padding-left: 35px;
+							}
+						}
+
+						// combo
+						.reuseCheckboxScrollWrapper___ {
+							.reuseCheckboxParrentWrapper___ {
+								border: 0;
+								padding: 0;
+							}
+						}
+
+						// checkbox & radio design
+						.reuseCheckboxParrentWrapper___,
+						.reuseCheckboxWrapper___,
+						.reuseRadioButtonWrapper___ {
+							.reuseCheckboxField___,
+							.reuseRadioButtonField___,
+							.combo {
+								label {
+									span {
+										color: var(--color__text-main, #{$color__text-main});
+										font-size: 14px;
+										font-weight: 400;
+									}
+								}
+							}
+						}
+
+						// select field
+						.dd__wrapper {
+							.dd__selectControl {
+								border: 1px solid $color__border;
+								border-radius: 3px !important;
+
+								.dd__selectedItem {
+									div {
+										color: var(--color__text-main, #{$color__text-main});
+										font-size: 14px;
+										font-weight: 400;
+									}
+								}
+
+								.dd__placeholder {
+									color: var(--color__text-light, #{$color__text-light});
+									font-size: 14px;
+									font-weight: 400;
+								}
+							}
+
+							.dd__list {
+								border: 1px solid $color__border;
+
+								.dd__option {
+									color: var(--color__text-main, #{$color__text-main});
+									font-size: 14px;
+									font-weight: 400;
+								}
+							}
+						}
+
+						// input field
+						input[type='text'],
+						input.reuseMapAutoCompleteInput___,
+						input.reuseInputField___ {
+							border: 1px solid $color__border;
+							color: var(--color__text-main, #{$color__text-main});
+							font-size: 14px;
+							font-weight: 400;
+							border-radius: 3px;
+
+							&::placeholder {
+								color: var(--color__text-light, #{$color__text-light});
+								font-size: 14px;
+								font-weight: 400;
+							}
+
+							&:hover,
+							&:focus {
+								border: 1px solid $color__border !important;
+							}
+						}
+
+						// simple picker
+						.reuseSelectedBoxWrapper___ {
+							button.reuseSelectBtn___ {
+								height: 40px;
+								border-radius: 3px;
+								border: 1px solid $color__border;
+								color: var(--color__text-main, #{$color__text-main});
+								font-size: 14px;
+								font-weight: 400;
+							}
+
+							button.reuseTagSelectBtn___,
+							button.reuseCircularSelectBtn___ {
+								border-color: $color__border;
+								color: var(--color__text-main, #{$color__text-main});
+								font-size: 14px;
+								font-weight: 400;
+
+								&.reuseSelectedClass___ {
+									color: $color__white;
+								}
+							}
+
+							button.reuseSelectColor___,
+							button.reuseTagSelectBtn___,
+							button.reuseImageSelectBtn___ {
+								border-radius: 3px;
+							}
+
+							button.reuseSelectColor___ {
+								margin-bottom: 5px;
+							}
+
+							button.reuseImageSelectBtn___ {
+								width: auto;
+								height: auto;
+							}
+						}
+
+						// min max button
+						.reuseMinMaxInput___ {
+							.reuseMinMaxBtn___ {
+								color: $color__white;
+								transition: all 0.3s ease;
+
+								&:nth-child(1) {
+									border-top-left-radius: 3px;
+									border-bottom-left-radius: 3px;
+								}
+
+								&:last-child {
+									border-top-right-radius: 3px;
+									border-bottom-right-radius: 3px;
+								}
+							}
+
+							input[type='text'] {
+								border-radius: 0;
+								margin: 0;
+								border-left: 0;
+								border-right: 0;
+							}
+						}
+
+						// rating search
+						.reuseSingleRatingBar___ {
+							span {
+								color: var(--color__text-main, #{$color__text-main});
+								font-size: 14px;
+								font-weight: 400;
+
+								&.reuseItemCount___ {
+									color: $color__white;
+								}
+							}
+						}
+
+						// rangle picker
+						.reuseNoUiSliderWrapper___ {
+							.noUi-horizontal {
+								padding: 0 10px;
+								height: 4px;
+								border-radius: 4px;
+								background-color: $color__border;
+
+								.noUi-origin {
+									&:last-child {
+										background-color: $color__border;
+									}
+
+									.noUi-handle {
+										width: 22px;
+										height: 22px;
+										top: -10px;
+										position: relative;
+										box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+
+										&::before {
+											content: '';
+											display: inline-block;
+											width: 6px;
+											height: 6px;
+											border-radius: 50%;
+											overflow: hidden;
+											background-color: $color__white;
+											top: calc(50% - 6px / 2);
+											left: calc(50% - 6px / 2);
+										}
+
+										.noUi-tooltip {
+											box-shadow: none;
+											border: 0;
+											color: $color__white;
+											font-size: 13px;
+											font-weight: 700;
+										}
+									}
+								}
+							}
+
+							.reuseSliderValueWrapper___ {
+								padding-top: 18px;
+
+								h3 {
+									padding-right: 0;
+								}
+
+								p.reuseSliderValue___ {
+									width: 100%;
+									color: var(--color__text-light, #{$color__text-light});
+									font-weight: 400;
+									font-size: calc(var(--base__font-size, #{$base__font-size}) - 1px);
+									display: flex;
+									align-items: center;
+									justify-content: space-between;
+
+									span.reuseSliderToValue___ {
+										position: relative;
+
+										&:before {
+											content: '';
+											display: inline-block;
+											width: 5px;
+											height: 2px;
+											background-color: $color__white;
+											position: absolute;
+											top: calc(50% - 1px);
+											left: 0;
+										}
+									}
+								}
+							}
+						}
+
+						// date range picker
+						.DateRangePicker {
+							.DateRangePickerInput {
+								border-radius: 3px;
+								border: 1px solid $color__border;
+
+								.DateInput {
+									width: 100px;
+									vertical-align: middle;
+									font-weight: 400;
+									font-size: 13px;
+									background-color: transparent;
+
+									@media (max-width: 480px) {
+										width: 96px;
+									}
+								}
+
+								.DateRangePickerInput__clear-dates {
+									padding: 0;
+									margin: 0;
+									position: absolute;
+									right: 4px;
+									top: 13px;
+
+									&:hover,
+									&:focus {
+										outline: 0;
+										background-color: transparent;
+									}
+
+									svg {
+										height: 10px;
+										width: 14px;
+									}
+								}
+							}
+						}
+					}
+
+					> div {
+						> button[type='button'] {
+							&#ResetButton,
+							&#FilterButton,
+							&#applyFilter {
+								border-radius: 3px;
+								color: $color__white;
+								font-weight: 400;
+								transition: all 0.3s ease;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// listing page split map style
+body.logged-in {
+	.react-grid-layout {
+		&.user__ {
+			.turbo-listing__page-map {
+				height: calc(100vh - 218px) !important;
+				top: 132px !important;
+			}
+		}
+	}
+}
+
+.react-grid-layout {
+	&.user__ {
+		.turbo-listing__page-map {
+			position: fixed !important;
+			height: calc(100vh - 182px) !important;
+			top: 100px !important;
+
+			> div {
+				height: 100%;
+
+				> div {
+					height: 100%;
+					padding: 0 !important;
+
+					.reactiveMapHeight___ {
+						height: 100% !important;
+					}
+				}
+			}
+
+			.gm-style {
+				img {
+					margin: 0;
+				}
+			}
+
+			.reactiveGridContents___ {
+				padding: 0;
+				height: 100%;
+			}
+		}
+	}
+}
+
+.page-template-full-width-page,
+.page-template-turbo-listing-view {
+	.reactiveUserView {
+		&.viewSearchBlock {
+			@media (max-width: 480px) {
+				width: 90%;
+
+				&.open {
+					left: 10%;
+				}
+
+				.reactiveDocWrapper {
+					padding: 0;
+
+					.reactiveDropdownView___
+						+ .reactiveSingleBox___:not(.reactiveDropdownView___) {
+						padding-left: 15px;
+						padding-right: 15px;
+						margin-top: 20px;
+					}
+
+					.reactiveDocCloseBtn {
+						left: -27px;
+						z-index: -1;
+					}
+				}
+
+				.DateRangePicker {
+					.DateRangePicker__picker {
+						&.DateRangePicker__picker--direction-left {
+							left: -20px !important;
+						}
+					}
+				}
+			}
+
+			@media (max-width: 320px) {
+				.DateRangePicker {
+					.DateRangePicker__picker {
+						&.DateRangePicker__picker--direction-left {
+							left: -44px !important;
+						}
+					}
+				}
+			}
+		}
+
+		.reactiveDocWrapper {
+			.reactiveSingleBoxFrontendView___ {
+				&.reactiveDropdownView___ {
+					width: calc(100% - 40px) !important;
+					margin: 0 auto;
+					margin-bottom: 12px;
+					.reactiveSearchGridContents___ {
+						width: 100%;
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// fixing primary color
+.reactiveSingleBoxFrontendView___.reactiveDropdownView___
+	.reactiveSearchGridContents___
+	.reuseFormWrapper___
+	.reuseSingleElement___
+	.reuseElementBlock___
+	.reuseCheckboxWrapper___
+	.reuseCheckboxField___
+	input.reuseCheckbox___:checked
+	+ label:before,
+.reactiveSingleBoxFrontendView___.reactiveDropdownView___
+	.reactiveSearchGridContents___
+	.reuseFormWrapper___
+	.reuseSingleElement___
+	.reuseElementBlock___
+	.reuseCheckboxParrentWrapper___
+	.reuseCheckboxField___
+	input.reuseCheckbox___:checked
+	+ label:before,
+.reactiveSingleBoxFrontendView___.reactiveDropdownView___
+	.reactiveSearchGridContents___
+	.reuseFormWrapper___
+	.reuseSingleElement___
+	.reuseElementBlock___
+	.reuseCheckboxWrapper___
+	.combo
+	input.reuseCheckbox___:checked
+	+ label:before,
+.reactiveSingleBoxFrontendView___.reactiveDropdownView___
+	.reactiveSearchGridContents___
+	.reuseFormWrapper___
+	.reuseSingleElement___
+	.reuseElementBlock___
+	.reuseCheckboxParrentWrapper___
+	.combo
+	input.reuseCheckbox___:checked
+	+ label:before,
+.reactiveSingleBoxFrontendView___.reactiveDropdownView___
+	.reactiveSearchGridContents___
+	.reuseFormWrapper___
+	.reuseSingleElement___
+	.reuseElementBlock___
+	.reuseCheckboxWrapper___
+	.reuseCheckboxField___
+	input.reuseComboCheckbox___:checked
+	+ label:before,
+.reactiveSingleBoxFrontendView___.reactiveDropdownView___
+	.reactiveSearchGridContents___
+	.reuseFormWrapper___
+	.reuseSingleElement___
+	.reuseElementBlock___
+	.reuseCheckboxParrentWrapper___
+	.reuseCheckboxField___
+	input.reuseComboCheckbox___:checked
+	+ label:before,
+.reactiveSingleBoxFrontendView___.reactiveDropdownView___
+	.reactiveSearchGridContents___
+	.reuseFormWrapper___
+	.reuseSingleElement___
+	.reuseElementBlock___
+	.reuseCheckboxWrapper___
+	.combo
+	input.reuseComboCheckbox___:checked
+	+ label:before,
+.reactiveSingleBoxFrontendView___.reactiveDropdownView___
+	.reactiveSearchGridContents___
+	.reuseFormWrapper___
+	.reuseSingleElement___
+	.reuseElementBlock___
+	.reuseCheckboxParrentWrapper___
+	.combo
+	input.reuseComboCheckbox___:checked
+	+ label:before,
+.reactiveSingleBoxFrontendView___.reactiveDropdownView___
+	.reactiveSearchGridContents___
+	.reuseFormWrapper___
+	.reuseSingleElement___
+	.reuseElementBlock___
+	.reuseNoUiSliderWrapper___
+	.noUi-horizontal
+	.noUi-origin
+	.noUi-handle {
+	border-color: var(--color__primary, #{$color__primary});
+	background-color: var(--color__primary, #{$color__primary});
+}
+
+.reactiveSingleBoxFrontendView___.reactiveDropdownView___
+	.reactiveSearchGridContents___
+	.reuseFormWrapper___
+	.reuseSingleElement___
+	.reuseElementBlock___
+	.reuseNoUiSliderWrapper___
+	.noUi-horizontal
+	.noUi-origin {
+	background-color: var(--color__primary, #{$color__primary});
+}

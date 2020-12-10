@@ -1,0 +1,59 @@
+.scwp-pageSettings-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.scwp-pageSettings-wrapper .scwp-tab-menu-wrapper {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding: 0;
+  background-color: #1c2838;
+  border: 0;
+}
+
+.scwp-pageSettings-wrapper .scwp-tab-menu-wrapper .scwp-tab-menu-button {
+  display: flex;
+  width: 100%;
+  padding: 0 0 0 20px;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 45px;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  margin-bottom: 1px;
+  background-color: #253141;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700
+}
+
+.scwp-pageSettings-wrapper .scwp-tab-menu-wrapper .scwp-tab-menu-button:last-of-type {
+  margin-bottom: 0
+}
+
+.scwp-pageSettings-wrapper .scwp-tab-menu-wrapper .scwp-tab-menu-button.active {
+  background-color: #eff1f3;
+  color: #253141
+}
+
+.scwp-pageSettings-wrapper .reuseFormWrapper___ {
+  padding: 30px;
+  border: 2px solid #eff1f3;
+  border-left: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.scwp-pageSettings-wrapper .reuseFormWrapper___ .reuseElementBlock___ .reuseLabelsWrapper___ h3.reuseLabel___ {
+  font-size: 14px;
+  color: #253141;
+}
+
+.scwp-pageSettings-wrapper .reuseFormWrapper___ .reuseElementBlock___ .reuseImageUpWrap___ .dragImage___ .reuseImageWrapper___ img {
+  object-fit: contain;
+}

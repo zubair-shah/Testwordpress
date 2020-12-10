@@ -1,0 +1,226 @@
+#banner{
+  background-image: url(assets/img/bannner.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+     overflow:hidden;
+         border-bottom-left-radius: 250px;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(0,0,0,0.5);
+    }
+    .banner-height{
+      height: 80vh;
+      .banner-content{
+            position:relative;
+            margin-top: 50px;
+             -webkit-animation: movebounce 3s linear infinite;
+    animation: movebounce 3s linear infinite;
+     @keyframes movebounce {
+          0% {
+            -webkit-transform: translateY(0px);
+                    transform: translateY(0px);
+          }
+          50% {
+            -webkit-transform: translateY(15px);
+                    transform: translateY(15px);
+          }
+          100% {
+            -webkit-transform: translateY(0px);
+                    transform: translateY(0px);
+          }
+        }
+        h1{
+              line-height: 55px;
+    letter-spacing: 3px;
+    font-size: 55px;
+        }
+        p{
+           font-size: 23px;
+    font-weight: 300;
+    padding: 0 10% 0 0;
+    line-height: 40px;
+        }
+      }
+      .banner-img{
+        img{
+              -webkit-animation: movebounce 3s linear infinite;
+    animation: movebounce 3s linear infinite;
+    @keyframes movebounce {
+          0% {
+            -webkit-transform: translateY(0px);
+                    transform: translateY(0px);
+          }
+          50% {
+            -webkit-transform: translateY(15px);
+                    transform: translateY(15px);
+          }
+          100% {
+            -webkit-transform: translateY(0px);
+                    transform: translateY(0px);
+          }
+        }
+        }
+      }
+    }
+}
+
+
+
+@media (max-width: 1360px){
+
+  #banner{ 
+    .banner-height{
+     .banner-content{
+      h1{
+            letter-spacing: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1260px){
+
+  #banner{ 
+    .banner-height{
+          height: 90vh;
+     .banner-content{
+      h1{
+            font-size: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px){
+
+  #banner{ 
+    .banner-height{
+          height: 80vh;
+     .banner-content{
+      margin-top: 0;
+      h1{
+                font-size: 50px;
+              line-height: 50px;
+        }
+        p{
+              font-size: 22px;
+              // font-weight: 300;
+              padding: 0 0% 0 0;
+              line-height: 35px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px){
+  #banner{
+    border-bottom-left-radius: 140px;
+  }
+}
+
+@media (max-width: 767px){
+
+  #banner{ 
+    &:after{
+      display: none;
+    }
+    .banner-height{
+          height: 70vh;
+     .row{
+      flex-flow: column-reverse;
+      display: flex;
+      .banner-content{
+          text-align: center;
+    margin: 20px 0;
+      h1{
+                font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 0 !important;
+              br{
+                display: none;
+              }
+        }
+        p{
+                  font-size: 18px;
+                padding: 0 10px 0 10px;
+                line-height: 30px;
+        }
+      }
+     }
+     .banner-img{
+      text-align: -webkit-center;
+      img{
+        height: 350px;
+      }
+     }
+    }
+  }
+}
+
+
+@media (max-width: 640px){
+
+  #banner{ 
+    .banner-height{
+          height: 60vh;
+     .row{
+     
+      .banner-content{
+         
+      h1{
+                font-size: 22px;
+              
+        }
+        p{
+                  font-size: 16px;
+          
+        }
+      }
+     }
+     
+    }
+  }
+}
+
+
+@media (max-width: 640px){
+
+  #banner{ 
+    .banner-height{
+          height: 60vh;
+     .row{
+     
+      .banner-content{
+         
+      h1{
+                    font-size: 22px;
+    line-height: 30px;
+              
+        }
+        p{
+           font-size: 14px;
+    line-height: 22px;
+    padding:0;
+          
+        }
+      }
+     }
+     .banner-img{
+      img{
+        height: 300px;
+      }
+     }
+    }
+  }
+}
+@media (max-width: 460px){
+  #banner{
+    border-bottom-left-radius: 0px;
+  }
+}

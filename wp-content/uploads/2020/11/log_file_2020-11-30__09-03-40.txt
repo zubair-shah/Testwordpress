@@ -1,0 +1,100 @@
+
+---Downloaded files---
+The import files for: Turbo_Car_Rental_3 were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost:8080/cable
+Data file = C:\xampp\htdocs\cable/wp-content/uploads/2020/11/demo-content-import-file_2020-11-30__09-03-40.xml
+Widget file = C:\xampp\htdocs\cable/wp-content/uploads/2020/11/demo-widgets-import-file_2020-11-30__09-03-40.json
+Customizer file = not defined!
+Redux files:
+turbo_option_data -> C:\xampp\htdocs\cable/wp-content/uploads/2020/11/demo-redux-import-file_0-2020-11-30__09-03-40.json 
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+[ERROR] Failed to import "single-post-author-min" (Media)
+
+
+------
+New AJAX call!
+[ERROR] Failed to import "single-post-author-min" (Media)
+[ERROR] Failed to import "logo-car" (Media)
+
+
+------
+New AJAX call!
+[ERROR] Failed to import "single-post-author-min" (Media)
+[ERROR] Failed to import "logo-car" (Media)
+
+
+------
+New AJAX call!
+[ERROR] Failed to import "single-post-author-min" (Media)
+[ERROR] Failed to import "logo-car" (Media)
+
+
+------
+New AJAX call!
+[ERROR] Failed to import "single-post-author-min" (Media)
+[ERROR] Failed to import "logo-car" (Media)
+
+
+------
+New AJAX call!
+[ERROR] Failed to import "single-post-author-min" (Media)
+[ERROR] Failed to import "logo-car" (Media)
+
+
+------
+New AJAX call!
+[ERROR] Failed to import "single-post-author-min" (Media)
+[ERROR] Failed to import "logo-car" (Media)
+
+
+------
+New AJAX call!
+[ERROR] Failed to import "single-post-author-min" (Media)
+[ERROR] Failed to import "logo-car" (Media)
+
+
+------
+New AJAX call!
+[ERROR] Failed to import "single-post-author-min" (Media)
+[ERROR] Failed to import "logo-car" (Media)
+
+
+---pt-ocdi/before_widgets_import---
+
+
+---Importing widgets---
+Footer widgets : 
+
+Turbo Pages - No Title - Imported
+Turbo Pages - No Title - Imported
+Turbo Pages - No Title - Imported
+Turbo Pages - No Title - Imported
+
+
+
+---Importing Redux settings---
+Redux settings import for: turbo_option_data finished successfully!
+
+---pt-ocdi/after_import---
+

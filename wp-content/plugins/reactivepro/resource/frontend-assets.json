@@ -1,0 +1,19 @@
+{
+  "re_preview": {
+    "js": "re_preview_ad37db.js",
+    "css": [
+      "../css/reactive-front.css",
+      "../css/reactive-front-two.css"
+    ]
+  },
+  "re_base": {
+    "js": "re_base_987d2f.js",
+    "css": [
+      "../css/reactive-front.css",
+      "../css/reactive-front-two.css"
+    ]
+  },
+  "vendor": {
+    "js": "re_forntend_vendor.a0633e.js"
+  }
+}

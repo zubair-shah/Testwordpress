@@ -1,0 +1,57 @@
+.post-type-archive-product {
+	.redq-product-ordering {
+		text-align: right;
+	}
+	.product {
+		.listing-details {
+			text-align: center;
+			padding: 16px 24px 20px;
+			h3 {
+				margin: 0;
+			}
+			h3.car-name,
+			h3.car-name a {
+				width: 95%;
+				color: var(--heading__color, #{$color__heading-color});
+				font-size: calc(var(--base__font-size, #{$base__font-size}) + 4px);
+				line-height: 30px;
+				font-weight: 600;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+			ul {
+				padding-left: 0;
+				margin-top: 16px;
+				li {
+					margin: 6px 0;
+					list-style: none;
+					color: var(--color__text-light, #{$color__text-light});
+					span {
+						color: var(--color__text-main, #{$color__text-main});
+					}
+				}
+			}
+			.listing-footer {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				border-top: 1px solid $color__border;
+				padding-top: 16px;
+				a {
+					text-decoration: underline;
+					&:hover,
+					&:focus {
+						text-decoration: none;
+					}
+				}
+				.price {
+					color: var(--color__text-light, #{$color__text-light});
+					.woocommerce-Price-amount {
+						color: var(--color__text-main, #{$color__text-main});
+					}
+				}
+			}
+		}
+	}
+}

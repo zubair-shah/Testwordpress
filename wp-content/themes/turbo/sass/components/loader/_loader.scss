@@ -1,0 +1,128 @@
+.turbo-loader {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color__loader-bg, #{$color__white});
+	transition: all 0.3s ease;
+	z-index: 999999;
+
+	&.fade-out {
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease;
+	}
+
+	&.complete {
+		display: none;
+	}
+
+	.loader {
+		height: 20px;
+		width: 250px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	.loader--dot {
+		height: 20px;
+		width: 20px;
+		position: absolute;
+		border-radius: 100%;
+		animation-name: loader;
+		animation-timing-function: ease-in-out;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		background-color: $color__black;
+		border: 2px solid $color__white;
+	}
+
+	.loader--dot:first-child {
+		background-color: #000000;
+		animation-delay: 0.5s;
+	}
+
+	.loader--dot:nth-child(2) {
+		background-color: #008489;
+		animation-delay: 0.4s;
+	}
+
+	.loader--dot:nth-child(3) {
+		background-color: #fc5c63;
+		animation-delay: 0.3s;
+	}
+
+	.loader--dot:nth-child(4) {
+		background-color: #42baf4;
+		animation-delay: 0.2s;
+	}
+
+	.loader--dot:nth-child(5) {
+		background-color: #36d1af;
+		animation-delay: 0.1s;
+	}
+
+	.loader--dot:nth-child(6) {
+		background-color: #ff992e;
+		animation-delay: 0s;
+	}
+
+	.loader--text {
+		position: absolute;
+		top: 160%;
+		left: 0;
+		right: 0;
+		width: 6rem;
+		margin: auto;
+	}
+
+	.loader--text:after {
+		color: var(--color__loader-text, #{$color__heading-color});
+		content: 'Loading';
+		font-weight: bold;
+		font-size: $base__font-size + 8px;
+		animation-name: loading-text;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+	}
+}
+
+@keyframes loader {
+	15% {
+		transform: translateX(0);
+	}
+	45% {
+		transform: translateX(230px);
+	}
+	65% {
+		transform: translateX(230px);
+	}
+	95% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes loading-text {
+	0% {
+		content: attr(data);
+	}
+	25% {
+		content: attr(data) '.';
+	}
+	50% {
+		content: attr(data) '..';
+	}
+	75% {
+		content: attr(data) '...';
+	}
+}

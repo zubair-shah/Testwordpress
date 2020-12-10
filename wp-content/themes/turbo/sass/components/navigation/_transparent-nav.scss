@@ -1,0 +1,13 @@
+.transparent-header {
+	// when header sticky
+	&.sticky {
+		.navbar {
+			background-color: $color__white;
+		}
+	}
+	.navbar {
+		background-color: transparent;
+		border-bottom: 0;
+		transition: all 0.2s ease;
+	}
+}

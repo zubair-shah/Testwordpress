@@ -1,0 +1,179 @@
+body {
+	background-color: $color__background-body;
+	overflow-x: hidden;
+
+	// google map reset style
+	.gm-style {
+		li,
+		img {
+			margin: 0;
+		}
+		button {
+			min-height: auto;
+		}
+	}
+
+	// nice scroll bar style
+	.nicescroll-rails {
+		&.nicescroll-rails-vr,
+		&.nicescroll-rails-hr {
+			background-color: var(
+				--color__secondary,
+				#{$color__secondary}
+			) !important;
+
+			.nicescroll-cursors {
+				background-color: var(--color__primary, #{$color__primary}) !important;
+			}
+		}
+	}
+
+	// quote btn font family reset
+	#quote-content-confirm {
+		color: var(--color__link, #{$color__link});
+    font-family: inherit;
+    margin: 10px 0 !important;
+		background-color: $color__background-hr !important;
+		transition: background-color 0.2s;
+		&:not(:disabled):hover {
+			background-color: $color__border-focus !important;
+		}
+	}
+
+	// xdsoft elements
+	.xdsoft_datetimepicker {
+		border-color: $color__border;
+		box-shadow: $base__shadow;
+		border-radius: 4px;
+		.xdsoft_timepicker {
+			border: 0 !important;
+		}
+		.xdsoft_month,
+		.xdsoft_year {
+			color: var(--heading__color, #{$color__heading-color});
+			font-size: var(--base__font-size, #{$base__font-size});
+		}
+		.xdsoft_calendar {
+			th,
+			td {
+				border: 0 !important;
+				color: var(--color__text-main, #{$color__text-main});
+			}
+			td {
+				font-weight: 400;
+				&.xdsoft_current {
+					opacity: 1;
+					color: $color__white !important;
+					border-width: 0 !important;
+					border-color: var(--color__primary, #{$color__primary}) !important;
+					background-color: var(
+						--color__primary,
+						#{$color__primary}
+					) !important;
+				}
+			}
+		}
+		.xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+			color: $color__white !important;
+			border-color: var(--color__primary, #{$color__primary}) !important;
+			background-color: var(--color__primary, #{$color__primary}) !important;
+		}
+  }
+
+  // swal style
+  .swal2-container {
+    z-index: 9999;
+    .swal2-modal {
+      font-family: var(--font__main, #{$font__main});
+      min-height: 246px !important;
+      .swal2-spacer {
+        background: transparent;
+      }
+      .swal2-error,
+      .swal2-question,
+      .swal2-info,
+      .swal2-success {
+        display: none;
+      }
+      .swal2-title {
+        color: var(--heading__color, #{$color__heading-color});
+        margin-bottom: 10px;
+      }
+      .swal2-content {
+        color: var(--color__text-main, #{$color__text-main});
+      }
+      button {
+        &:focus {
+          outline: none;
+        }
+        &.swal2-confirm,
+        &.swal2-confirm:hover,
+        &.swal2-confirm:focus {
+          background-color: var(--color__primary, #{$color__primary}) !important;
+        }
+        &.swal2-cancel,
+        &.swal2-cancel:hover,
+        &.swal2-cancel:focus {
+          color: var(--color__primary, #{$color__primary}) !important;
+          background-color: var(--color__secondary, #{$color__secondary}) !important;
+        }
+      }
+    }
+  }
+
+  // info window
+  .gm-style-iw {
+    padding: 0 !important;
+    .gm-style-iw-d {
+      overflow: hidden !important;
+      .image {
+        img {
+          max-width: 250px;
+        }
+      }
+      .loc-content {
+        max-width: 250px;
+        padding: 10px 18px 12px;
+        h3 {
+          font-size: var(--base__font-size, #{$base__font-size});
+          line-height: 1.6;
+          margin: 0 0 8px;
+        }
+        p {
+          font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+          line-height: 1.6;
+          margin: 0 0 4px;
+          &:empty {
+            display: none;
+          }
+        }
+      }
+    }
+    button.gm-ui-hover-effect {
+      opacity: 1;
+      top: 10px !important;
+      right: 10px !important;
+      border-radius: 50%;
+      background: $color__white !important;
+    }
+  }
+
+  // rfq modal
+  .mfp-bg {
+    z-index: 99999;
+  }
+  .mfp-wrap {
+    z-index: 99999;
+    .rnb-popup {
+      padding: 50px 40px 40px;
+      p {
+        >span {
+          display: block;
+          font-weight: 600;
+          font-size: 14px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

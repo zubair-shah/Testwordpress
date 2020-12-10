@@ -1,0 +1,105 @@
+.search-layout-four {
+	position: relative;
+	> .header-body {
+		height: auto;
+		padding-top: 56px;
+		padding-bottom: 56px;
+		background-color: $color__background-light;
+		.container {
+			.rq-home-banner-content {
+				max-width: 702px;
+				box-sizing: border-box;
+				margin: 0 auto 32px;
+				text-align: center;
+				@media (max-width: 767px) {
+					margin: 0 auto;
+				}
+				.badge-heading {
+					h6 {
+						display: inline-flex;
+						align-items: center;
+						justify-content: center;
+						max-width: 420px;
+						border: 1px solid rgba(0, 0, 0, 0.04);
+						border-radius: 40px;
+						background-color: $color__white;
+						box-shadow: 0px 5px 10px 0px rgba(38, 67, 93, 0.06);
+						padding: 4px 14px 4px 4px;
+						font-size: 13px;
+						line-height: 1;
+						color: var(--heading__color, #{$color__heading-color});
+						font-weight: 500;
+						span {
+							display: inline-flex;
+							align-items: center;
+							justify-content: center;
+							min-width: 109px;
+							min-height: 30px;
+							border-radius: 40px;
+							margin-right: 12px;
+							color: $color__white;
+							font-size: calc(var(--base__font-size, #{$base__font-size}) - 4px);
+							font-weight: 600;
+							text-transform: capitalize;
+							background-color: var(--color__primary, #{$color__primary});
+							box-shadow: 0px 6px 8px 0px rgba(38, 67, 93, 0.06);
+						}
+						@media (max-width: 767px) {
+							flex-direction: column;
+							padding: 20px 20px 14px;
+							box-sizing: border-box;
+							position: relative;
+							span {
+								position: absolute;
+								top: -16px;
+								left: 50%;
+								transform: translateX(-50%);
+							}
+						}
+					}
+				}
+				h1 {
+					margin-top: 0;
+					padding-top: 0;
+					color: var(--heading__color, #{$color__heading-color});
+					font-size: 48px;
+					line-height: 75px;
+					font-weight: 700;
+					margin-bottom: 10px;
+					@media (max-width: 991px) {
+						font-size: 42px;
+						line-height: 60px;
+					}
+					@media (max-width: 767px) {
+						font-size: 32px;
+						line-height: 46px;
+						margin-bottom: 20px;
+					}
+				}
+				p {
+					font-size: calc(var(--base__font-size, #{$base__font-size}) + 2px);
+					line-height: 2;
+					color: var(--heading__color, #{$color__heading-color});
+					padding: 0 56px;
+					margin-top: 30px;
+					@media (max-width: 767px) {
+						font-size: calc(var(--base__font-size, #{$base__font-size}) - 2px);
+						line-height: 1.75;
+						padding: 0 20px;
+					}
+				}
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+			}
+			.rq-home-banner-car {
+				text-align: center;
+				img {
+					max-width: 80%;
+					height: auto;
+				}
+			}
+		}
+	}
+}

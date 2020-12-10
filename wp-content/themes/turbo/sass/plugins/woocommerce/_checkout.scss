@@ -1,0 +1,216 @@
+.woocommerce-checkout {
+	.checkout_coupon {
+		max-width: 620px;
+		grid-column-gap: 16px;
+		display: grid;
+		grid-template-columns: 1fr auto;
+		grid-template-areas:
+			'text text'
+			'input btn';
+		.form-row-first {
+			grid-area: input;
+		}
+		.form-row-last {
+			grid-area: btn;
+		}
+		.clear {
+			display: none;
+		}
+	}
+
+	.panel-title {
+		padding-bottom: 16px;
+		margin-bottom: 16px;
+		border-bottom: 1px solid $color__border;
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.shop_table:not(.wp-calendar-table) {
+    thead {
+      tr {
+        th {
+          &.product-name {
+            width: 70%;
+          }
+        }
+      }
+    }
+		.variation {
+      @media (min-width: 992px) {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-column-gap: 4px;
+      }
+      @media (min-width: 481px) and (max-width: 767px) {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-column-gap: 4px;
+      }
+			dd {
+				p {
+					margin: 0;
+				}
+			}
+    }
+    td.product-total {
+      text-align: center;
+    }
+		tfoot {
+			tr {
+				th {
+					text-align: left;
+					padding: 0 15px 20px;
+				}
+				td {
+					text-align: right;
+					padding: 0 15px 20px;
+				}
+			}
+		}
+	}
+
+	.woocommerce-form-coupon {
+		p {
+			margin-top: 0;
+		}
+	}
+
+	.customer-details {
+		.form-row {
+			label {
+				display: inline-block;
+				margin-bottom: 8px;
+			}
+		}
+
+		.woocommerce-input-wrapper {
+			display: block;
+		}
+
+		#ship-to-different-address {
+			font-size: calc(var(--base__font-size, #{$base__font-size}) + 4px);
+			label {
+				input[type='checkbox'] {
+					opacity: 0;
+					visibility: hidden;
+					z-index: -1;
+					position: absolute;
+					&:checked {
+						+ span {
+							&::before {
+								border-color: var(--color__primary, #{$color__primary});
+								background-color: var(--color__primary, #{$color__primary});
+							}
+							&::after {
+								content: '\f00c';
+								font-family: 'Font Awesome 5 Free';
+								font-size: 12px;
+								position: absolute;
+								left: 4px;
+								top: auto;
+								bottom: auto;
+								color: $color__white;
+							}
+						}
+					}
+				}
+				span {
+					display: inline-flex;
+					align-items: center;
+					position: relative;
+					cursor: pointer;
+					&::before {
+						content: '';
+						display: inline-block;
+						width: 20px;
+						height: 20px;
+						border-radius: 4px;
+						border: 1px solid $color__border;
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+
+		.woocommerce-shipping-fields__field-wrapper {
+			p {
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+
+	.woocommerce-checkout-review-order {
+		.wc_payment_methods {
+			padding: 0;
+
+			li {
+				list-style: none;
+			}
+
+			.wc_payment_method {
+				input[type='radio'] {
+					opacity: 0;
+					visibility: hidden;
+					z-index: -1;
+					position: absolute;
+					&:checked {
+						+ label {
+							&::before {
+								border-color: var(--color__text-main, #{$color__text-main});
+							}
+							&::after {
+								content: '\f111';
+								font-family: 'Font Awesome 5 Free';
+								font-size: 10px;
+								position: absolute;
+								left: 5px;
+								top: calc(50% - 8px);
+								bottom: auto;
+							}
+						}
+					}
+				}
+				label {
+					display: flex;
+					align-items: center;
+					font-weight: 600;
+					position: relative;
+					img {
+						max-width: 132px;
+						margin-left: 6px;
+						margin-right: 6px;
+					}
+					&::before {
+						content: '';
+						display: inline-block;
+						width: 20px;
+						height: 20px;
+						border-radius: 20px;
+						border: 1px solid $color__border;
+						margin-right: 8px;
+					}
+				}
+			}
+
+			.payment_box {
+				padding-left: 30px;
+				padding-top: 8px;
+				p {
+          margin: 0;
+          color: var(--color__text-light, #{$color__text-light});
+				}
+			}
+    }
+    
+    .place-order {
+      button[type="submit"] {
+        font-weight: 500;
+        text-transform: capitalize;
+      }
+    }
+	}
+}
